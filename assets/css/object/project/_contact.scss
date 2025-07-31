@@ -7,18 +7,18 @@
     &__btn {
         margin-top: 4rem;
         height: 150px;
-        border: 2px solid $mainColor;
-        background-color: $mainColor;
+        border: 2px solid var(--color-pri);
+        background-color: var(--color-pri);
         display: flex;
         justify-content: center;
         align-items: center;
         border-radius: 1px;
-        color: $baseColor;
-        transition: $seconds;
+        color: var(--color-base);
+        transition: $ani;
         &:hover {
-        background-color: $baseColor;
-        color: $mainColor;
-        border: 2px solid $mainColor;
+        background-color: var(--color-base);
+        color: var(--color-pri);
+        border: 2px solid var(--color-pri);
         }
     }
 }

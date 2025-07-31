@@ -5,10 +5,11 @@ html {
 }
 
 body {
-   background-color: $baseColor;
+   background-color: var(--color-base);
    font-size: 1.6rem;
    letter-spacing: 0.16rem;
-   color: $mainColor; 
+   line-height: 1.75;
+   color: var(--color-pri); 
    box-sizing: border-box;
    font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", "Helvetica Neue", HelveticaNeue, YuGothic, "Yu Gothic Medium", "Yu Gothic", Verdana, Meiryo, sans-serif;
 }
@@ -25,11 +26,11 @@ main {
 }
 
 ::-moz-selection {
-   background-color: $mainColor;
-   color: $baseColor;
+   background-color: var(--color-pri);
+   color: var(--color-base);
 }
 
 ::selection {
-   background-color: $mainColor;
-   color: $baseColor;
+   background-color: var(--color-pri);
+   color: var(--color-base);
 }

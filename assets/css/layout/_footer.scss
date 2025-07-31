@@ -1,8 +1,8 @@
 @use "../global/variable" as *;
 @use "../global/mixin" as *;
 .l-footer{
-   background-color: $mainColor;
-   color: $baseColor;
+   background-color: var(--color-pri);
+   color: var(--color-base);
    height: 60px;
    display: grid;
    place-items: center;

@@ -29,7 +29,7 @@
             content: '';
             height: 8rem;
             width: 1px;
-            background-color: $mainColor;
+            background-color: var(--color-pri);
         }
         &::after {
             content: '';
@@ -39,7 +39,7 @@
             content: '';
             height: 2.4rem;
             width: 1px;
-            background-color: $baseColor;
+            background-color: var(--color-base);
             animation-name: scroll;
             animation-duration: 1.4s;
             animation-delay: 1s;

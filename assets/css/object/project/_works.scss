@@ -28,7 +28,7 @@
         inset: 0 auto auto 0;
         opacity: 0;
         background-color: rgba(0,0,0,0.5);	/* マスクは半透明 */
-        transition: $seconds;
+        transition: $ani;
         display: grid;
         place-items: center;
         color: #fff;

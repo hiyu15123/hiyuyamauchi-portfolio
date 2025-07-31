@@ -7,18 +7,18 @@
    }
    &__arrow{
       position: relative;
-      transition: $seconds;
+      transition: $ani;
       &:hover {
-         background-color: $mainColor;
-         color: $baseColor;
+         background-color: var(--color-pri);
+         color: var(--color-base);
       }
       &::after {
       content: '';
       position: absolute;
       height: 0.8rem;
       width: 0.8rem;
-      border-top: 2px solid $mainColor;
-      border-right: 2px solid $mainColor;
+      border-top: 2px solid var(--color-pri);
+      border-right: 2px solid var(--color-pri);
       transform: rotate(45deg);
       margin-top: 0.55rem;
       margin-left: 0.8rem;
@@ -26,10 +26,10 @@
    }
    &__li {
       margin-left: 3.2rem;
-      transition: $seconds;
+      transition: $ani;
       &:hover {
-         background-color: $mainColor;
-         color: $baseColor;
+         background-color: var(--color-pri);
+         color: var(--color-base);
       }
    }
    &__wrapper {
@@ -70,7 +70,7 @@
    }
    &__link:hover {
       border-bottom: 1px solid #000;
-      transition: $seconds;
+      transition: $ani;
    }
    &__page-nation {
       display: flex;
@@ -79,10 +79,10 @@
    }
    &__prev, &__next {
       position: relative;
-      transition: $seconds;
+      transition: $ani;
       &:hover {
-         background-color: $mainColor;
-         color: $baseColor;
+         background-color: var(--color-pri);
+         color: var(--color-base);
       }
    }
 }

@@ -1,10 +1,12 @@
 // カラー
-$baseColor: #fff;
-$mainColor: #333;
+:root {
+   --color-base: #fff;
+   --color-pri: #333;
+}
 
 // ブレイクポイント
 $tb: 1026px;
 $sp: 600px;
 
 // アニメーション
-$seconds : .2s;
+$ani : .2s;
