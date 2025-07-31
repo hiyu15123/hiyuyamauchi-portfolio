@@ -1,9 +1,6 @@
 @use "../../global/variable" as *;
 @use "../../global/mixin" as *;
 .p-contact{
-    &__heading{
-        @include heading;
-    }
     &__btn {
         margin-top: 4rem;
         height: 150px;

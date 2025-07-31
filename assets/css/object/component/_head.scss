@@ -1,0 +1,27 @@
+.c-head01 {
+   color: var(--color-pri);
+   text-align: center;
+   font-size: 4rem;
+   letter-spacing: 0.4rem;
+}
+
+.c-head02 {
+   letter-spacing: 0.16rem;
+   font-weight: bold;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: 0.5rem 0.8rem 5.6rem 0.8rem;
+   &::before,&::after{
+      content: "";
+      border-top: 1px solid var(--color-pri);
+      background-color: var(--color-pri);
+      width: 20px;
+   }
+   &::before{
+      margin-right: 0.6rem;
+   }
+   &::after{
+         margin-left: 0.6rem;
+   }
+}

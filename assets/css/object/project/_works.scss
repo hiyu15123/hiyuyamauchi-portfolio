@@ -1,9 +1,6 @@
 @use "../../global/variable" as *;
 @use "../../global/mixin" as *;
 .p-works{
-    &__heading{
-        @include heading; 
-    }
     &__ul{
         display: grid;
         grid-template-columns: 1fr 1fr;

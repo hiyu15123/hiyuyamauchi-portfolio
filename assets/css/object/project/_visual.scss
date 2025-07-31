@@ -11,11 +11,9 @@
     }
     &__title {
         font-size: max(6.5vw, 4rem);
-        letter-spacing: 0.65vw;
     }
-    &__secondary-title {
+    &__subtitle {
         font-size: max(3vw, 2.4rem);
-        letter-spacing: 0.3vw;
     }
     &__scroll {
         position: absolute;
@@ -63,7 +61,7 @@
 //         &__title {
 //             letter-spacing: 0.4rem;
 //         }
-//         &__secondary-title {
+//         &__subtitle {
 //             letter-spacing: 0.24rem;
 //         }
 //     }
