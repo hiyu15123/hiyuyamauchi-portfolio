@@ -10,7 +10,15 @@
     <title>HIYU YAMAUCHI PORTFOLIO</title>
 </head>
 <body>
-    <!-- <script>header("/include/header.html");</script> -->
+    <!-- Load header from an include file -->
+    <header class="l-header" id="l-header"></header>
+    <script>
+        fetch('include/header.html')
+            .then(response => response.text())
+            .then(html => {
+            document.getElementById('l-header').innerHTML = html;
+        });
+    </script>
     <main>
         <section class="p-visual">
             <div class="p-visual__wrapper">
@@ -223,6 +231,15 @@
             </a>
         </section>
     </main>
-    <!-- <script>header("/include/footer.html");</script> -->
+    
+    <!-- Load footer from an include file -->
+    <footer class="l-footer" id="l-footer"></footer>
+    <script>
+        fetch('include/footer.html')
+            .then(response => response.text())
+            .then(html => {
+            document.getElementById('l-footer').innerHTML = html;
+        });
+    </script>
 </body>
 </html>
