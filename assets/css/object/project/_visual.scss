@@ -19,20 +19,21 @@
         position: absolute;
         inset: auto auto 20% 50%;
         transform: translateX(-50%);
-        padding: 1.6rem;
         &::before {
             position: absolute;
-            inset: 100% auto auto 50%;
+            top: calc(100% + 2rem);
+            left: 50%;
             transform: translate(-50% -50%);
             content: '';
-            height: 8rem;
+            height: 6.4rem;
             width: 1px;
             background-color: var(--color-pri);
         }
         &::after {
             content: '';
             position: absolute;
-            inset: 100% auto auto 50%;
+            top: calc(100% + 2rem);
+            left: 50%;
             transform: translate(-50% -50%);
             content: '';
             height: 2.4rem;

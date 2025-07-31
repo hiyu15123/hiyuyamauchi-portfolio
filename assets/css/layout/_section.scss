@@ -2,10 +2,10 @@
 @use "../global/mixin" as *;
 
 .l-section {
-   padding: 10%;
-}
-@media (max-width:$sp) {
-   .l-section {
-      padding: 10% 5%;
+   & + * {
+      margin-top: 12rem;
+      @include sp {
+         margin-top: 8rem;
+      }
    }
 }

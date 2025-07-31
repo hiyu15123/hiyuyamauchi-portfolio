@@ -1,6 +1,7 @@
 @use "../../global/variable" as *;
 @use "../../global/mixin" as *;
 .p-skill{
+
     &__wrapper {
         display: grid;
         grid-template-columns: 1fr 1fr;
