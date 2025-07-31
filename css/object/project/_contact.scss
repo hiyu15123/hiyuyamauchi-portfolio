@@ -1,0 +1,24 @@
+@use "../../global/variable" as *;
+@use "../../global/mixin" as *;
+.p-contact{
+    &__heading{
+        @include heading;
+    }
+    &__btn {
+        margin-top: 4rem;
+        height: 150px;
+        border: 2px solid $mainColor;
+        background-color: $mainColor;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 1px;
+        color: $baseColor;
+        transition: $seconds;
+        &:hover {
+        background-color: $baseColor;
+        color: $mainColor;
+        border: 2px solid $mainColor;
+        }
+    }
+}

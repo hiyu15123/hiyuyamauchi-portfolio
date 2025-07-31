@@ -1,0 +1,26 @@
+@use "../../global/variable" as *;
+@use "../../global/mixin" as *;
+.p-message{
+    &__title{
+        font-size: 3.2rem;
+        letter-spacing: 0.32rem;
+        line-height: 5.6rem;
+        font-weight: bold;
+        text-align: center;
+    }
+    &__text{
+        margin: 6rem auto 0 auto;
+        text-align: justify;
+    }
+}
+
+@media (max-width:$sp) {
+    .p-message {
+        &__title{
+            font-size: 2.4rem;
+            letter-spacing: 0.24rem;
+            line-height: 3.2rem;
+        }
+    }
+    
+}

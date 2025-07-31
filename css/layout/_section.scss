@@ -1,0 +1,11 @@
+@use "../global/variable" as *;
+@use "../global/mixin" as *;
+
+.l-section {
+   padding: 10%;
+}
+@media (max-width:$sp) {
+   .l-section {
+      padding: 10% 5%;
+   }
+}

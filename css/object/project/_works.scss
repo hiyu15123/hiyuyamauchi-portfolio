@@ -1,0 +1,65 @@
+@use "../../global/variable" as *;
+@use "../../global/mixin" as *;
+.p-works{
+    &__heading{
+        @include heading; 
+    }
+    &__ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2.4rem;
+    }
+    &__li{
+        padding: 5%;
+        border: 1px solid #333;
+        position: relative;
+        background-color: #fff;
+        &:hover {
+            opacity: 1;
+        }
+    }
+    &__img {
+        border: 1px solid #333;
+    }
+    &__mask{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        inset: 0 auto auto 0;
+        opacity: 0;
+        background-color: rgba(0,0,0,0.5);	/* マスクは半透明 */
+        transition: $seconds;
+        display: grid;
+        place-items: center;
+        color: #fff;
+        font-size: 10rem;
+        &:hover {
+            opacity: 1;
+        }
+    }
+    &__content {
+        margin-top: 2.4rem;
+    }
+    &__fit {
+        object-fit: cover;
+        object-position: top left;
+        aspect-ratio: 3 / 2;
+        &--contain {
+            object-fit: contain;
+            object-position: center;
+        }
+    }
+    &__summary {
+        font-size: 1.4rem;
+        opacity: 0.6;
+    }
+}
+
+@media (max-width:$sp) {
+
+    .p-works{
+        &__ul {
+            grid-template-columns: 1fr;
+        }
+    }
+}

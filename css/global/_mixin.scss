@@ -1,0 +1,45 @@
+@use "./variable" as *;
+@mixin heading {
+    color: $mainColor;
+    text-align: center;
+    font-size: 4rem;
+    letter-spacing: 0.4rem;
+    &--under{
+        font-size: 1.6rem;
+        letter-spacing: 0.16rem;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0.5rem 0.8rem 5.6rem 0.8rem;
+        &::before,&::after{
+            content: "";
+            border-top: 1px solid $mainColor;
+            background-color: $mainColor;
+            width: 20px;
+        }
+        &::before{
+            margin-right: 0.6rem;
+        }
+        &::after{
+            margin-left: 0.6rem;
+        }
+    }
+    }
+// @mixin hover {
+//    position: relative;
+//    &::after{
+//        position: absolute;
+//        bottom: -5px;
+//        left: 0;
+//        width: 100%;
+//        height: 2px;
+//        background-color: $mainColor;
+//        content: '';
+//        transform: scale(0, 1);
+//        transform-origin: center top;
+//    }
+//    &:hover::after{
+//        transform: scale(1, 1);
+//    }
+// }
