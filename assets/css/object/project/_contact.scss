@@ -1,21 +1,24 @@
 @use "../../global/variable" as *;
 @use "../../global/mixin" as *;
+@use "../component/title" as *;
+
 .p-contact{
-    &__btn {
-        margin-top: 4rem;
-        height: 150px;
-        border: 2px solid var(--color-pri);
+    &__btn a {
+        height: 16rem;
+        border: 1px solid var(--color-pri);
         background-color: var(--color-pri);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 1px;
         color: var(--color-base);
+        display: grid;
+        place-items: center;
         transition: $ani;
+        @extend .c-title;
+        @include sp {
+            height: 12rem;
+            font-size: 1.6rem;
+        }
         &:hover {
-        background-color: var(--color-base);
-        color: var(--color-pri);
-        border: 2px solid var(--color-pri);
+            background-color: var(--color-base);
+            color: var(--color-pri);
         }
     }
 }

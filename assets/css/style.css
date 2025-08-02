@@ -377,6 +377,12 @@ main {
   padding-top: 60px;
   background-image: radial-gradient(#efefef 30%, transparent 0%);
   background-size: 4px 4px;
+  padding-bottom: 16rem;
+}
+@media (max-width: 767px) {
+  main {
+    padding-bottom: 12rem;
+  }
 }
 
 ::-moz-selection {
@@ -521,14 +527,14 @@ main {
   margin-top: 4rem;
 }
 
-.c-title, .p-work__title a {
+.c-title, .p-contact__btn a, .p-work__title a {
   font-size: 2rem;
   letter-spacing: 0.24rem;
   font-weight: bold;
   line-height: 1.5;
 }
 @media (max-width: 767px) {
-  .c-title, .p-work__title a {
+  .c-title, .p-contact__btn a, .p-work__title a {
     font-size: 1.8rem;
   }
 }
@@ -787,22 +793,24 @@ main {
   line-height: 1.5;
 }
 
-.p-contact__btn {
-  margin-top: 4rem;
-  height: 150px;
-  border: 2px solid var(--color-pri);
+.p-contact__btn a {
+  height: 16rem;
+  border: 1px solid var(--color-pri);
   background-color: var(--color-pri);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 1px;
   color: var(--color-base);
+  display: grid;
+  place-items: center;
   transition: 0.2s;
 }
-.p-contact__btn:hover {
+@media (max-width: 767px) {
+  .p-contact__btn a {
+    height: 12rem;
+    font-size: 1.6rem;
+  }
+}
+.p-contact__btn a:hover {
   background-color: var(--color-base);
   color: var(--color-pri);
-  border: 2px solid var(--color-pri);
 }
 
 .u-mt16 {

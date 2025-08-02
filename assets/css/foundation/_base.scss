@@ -28,6 +28,10 @@ main {
    background-image:
    radial-gradient(#efefef 30%, transparent 0%);
    background-size: 4px 4px;
+   padding-bottom: 16rem;
+   @include sp {
+      padding-bottom: 12rem;
+   }
 }
 
 ::-moz-selection {
