@@ -1,5 +1,6 @@
 @use "../../global/variable" as *;
 @use "../../global/mixin" as *;
+
 .p-about {
     &__inner {
         display: flex;
@@ -42,8 +43,8 @@
             }
         }
     }
-    &__dt {
-        border-bottom: 1px solid #bdbdbd;
+    &__title {
+        border-bottom: 1px solid #333;
         padding-bottom: 0.8rem;
         font-size: 1.6rem;
         line-height: 1.5;

@@ -1,62 +1,65 @@
 @use "../../global/variable" as *;
 @use "../../global/mixin" as *;
-.p-works{
-    &__ul{
+@use "../component/title" as *;
+
+.p-work{
+    &__list{
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 2.4rem;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 4.8rem 3.2rem;
+        @include sp {
+            grid-template-columns: repeat(1, 1fr);
+            gap: 2.4rem;
+        }
     }
-    &__li{
-        padding: 5%;
+    &__item {
+        padding: 1.6rem;
         border: 1px solid #333;
         position: relative;
         background-color: #fff;
         &:hover {
-            opacity: 1;
+            & img {
+                transform: scale(1.05);
+            }
         }
     }
     &__img {
         border: 1px solid #333;
-    }
-    &__mask{
         width: 100%;
-        height: 100%;
-        position: absolute;
-        inset: 0 auto auto 0;
-        opacity: 0;
-        background-color: rgba(0,0,0,0.5);	/* マスクは半透明 */
-        transition: $ani;
-        display: grid;
-        place-items: center;
-        color: #fff;
-        font-size: 10rem;
-        &:hover {
-            opacity: 1;
-        }
-    }
-    &__content {
-        margin-top: 2.4rem;
-    }
-    &__fit {
-        object-fit: cover;
-        object-position: top left;
         aspect-ratio: 3 / 2;
-        &--contain {
-            object-fit: contain;
-            object-position: center;
+        overflow: hidden;
+        & img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: $ani;
+        }
+        & + * {
+            margin-top: 1.6rem;
+            @include sp {
+                margin-top: 1.4rem;
+            }
         }
     }
-    &__summary {
+    &__title {
+        line-height: 1.5;
+        & + * {
+            margin-top: 0.8rem;
+        }
+    }
+    &__title a {
+        @extend .c-title;
+        &::before {
+            content: '';
+            position: absolute;
+            inset: 0 auto auto 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &__tag {
         font-size: 1.4rem;
-        opacity: 0.6;
-    }
-}
-
-@media (max-width:$sp) {
-
-    .p-works{
-        &__ul {
-            grid-template-columns: 1fr;
-        }
+        color: #888;
+        line-height: 1.5;
     }
 }

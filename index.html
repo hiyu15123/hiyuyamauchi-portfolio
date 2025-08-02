@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.typekit.net/umk2pba.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&amp;display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&amp;display=swap" rel="stylesheet" media="print" onload="this.media='all'">
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="assets/js/main.js" defer></script>
     <title>HIYU YAMAUCHI PORTFOLIO</title>
@@ -43,15 +45,15 @@
                     <p class="p-about__img"><img src="assets/img/selfie.png" alt="顔写真"></p>
                     <div class="p-about__content">
                         <dl class="p-about__dl">
-                            <dt class="p-about__dt">NAME</dt>
+                            <dt class="p-about__title">NAME</dt>
                             <dd>山内 飛勇 （やまうち ひゆう）</dd>
                         </dl>
                         <dl class="p-about__dl">
-                            <dt class="p-about__dt">INFORMATION</dt>
+                            <dt class="p-about__title">INFORMATION</dt>
                             <dd>2003年生まれ。大阪府八尾市出身。</dd>
                         </dl>
                         <dl class="p-about__dl -col2">
-                            <dt class="p-about__dt">BACKGROUND</dt>
+                            <dt class="p-about__title">BACKGROUND</dt>
                             <dd>
                             清風情報工科学院 デザイン・コンピュータ学科 卒業（2024年）。
                             <br>
@@ -59,11 +61,11 @@
                             </dd>
                         </dl>
                         <dl class="p-about__dl">
-                            <dt class="p-about__dt">LIKE</dt>
-                            <dd>登山、スノーボード、サカナクション、ラジオ</dd>
+                            <dt class="p-about__title">LIKE</dt>
+                            <dd>登山、スノーボード、サカナクション、ラジオ聴取</dd>
                         </dl>
                         <dl class="p-about__dl">
-                            <dt class="p-about__dt">COMMENT</dt>
+                            <dt class="p-about__title">COMMENT</dt>
                             <dd>かなりの多趣味です。</dd>
                         </dl>
                     </div>
@@ -76,14 +78,14 @@
                     <p>SKILL</p>
                     <span>できること</span>
                 </h2>
-                <div class="p-skill__inner">
+                <div class="p-skill__list">
                     <div class="p-skill__item">
                         <div class="p-skill__img">
                             <p><img src="assets/img/icon_html5.svg" alt="HTML5のアイコン"></p>
                             <p><img src="assets/img/icon_sass.svg" alt="Sassのアイコン"></p>
                         </div>
                         <div class="p-skill__content">
-                            <p class="c-title p-skill__title">HTML5、Sass(Scss)</p>
+                            <h3 class="c-title p-skill__title">HTML5、Sass(Scss)</h3>
                             <p class="p-skill__text">BEMとFLOCSSを使用して保守性のある記述を心がけて記述しています。またEmmetやCSS変数を駆使して、素早く組むことを心掛けています</p>
                         </div>
                     </div>
@@ -95,7 +97,7 @@
                             <p><img src="assets/img/icon_gsap.svg" alt="GSAPのアイコン"></p>
                         </div>
                         <div class="p-skill__content">
-                            <p class="c-title p-skill__title">JavaScript（Vanilla、jQuery、Swiper、GSAP）</p>
+                            <h3 class="c-title p-skill__title">JavaScript（Vanilla、jQuery、Swiper、GSAP）</h3>
                             <p class="p-skill__text">基本は、VanillaJSで記述しています。Webサイトの改修業務など、既にjQueryで実装されているサイトは、そのまま使用してコードを調整します。シュミレーションなど、複雑な構文を書く実装は得意ではありませんが、DOM操作やスライダー、アニメーションの実装ができます。まだまだこれからも勉強していきたいです。</p>
                         </div>
                     </div>
@@ -104,7 +106,7 @@
                             <p><img src="assets/img/icon_vue.svg" alt="Vue.JSのアイコン"></p>
                         </div>
                         <div class="p-skill__content">
-                            <p class="c-title p-skill__title">Vue.JS</p>
+                            <h3 class="c-title p-skill__title">Vue.JS</h3>
                             <p class="p-skill__text">フレームワークです。</p>
                         </div>
                     </div>
@@ -113,7 +115,7 @@
                             <p><img src="assets/img/icon_wordpress.svg" alt="WordPressのアイコン"></p>
                         </div>
                         <div class="p-skill__content">
-                            <p class="c-title p-skill__title">WordPress</p>
+                            <h3 class="c-title p-skill__title">WordPress</h3>
                             <p class="p-skill__text">主に「lazy block」というプラグインを使用して、編集画面で使用するブロックを、実装した静的サイトからコードで作成していました。また、要素の取得やカスタム投稿タイプのタクソノミーの作成など改修作業を行っていました。</p>
                         </div>
                     </div>
@@ -123,126 +125,95 @@
                             <p><img src="assets/img/icon_github.svg" alt="jqueryのアイコン"></p>
                         </div>
                         <div class="p-skill__content">
-                            <p class="c-title p-skill__title">OTHER TOOLS</p>
-                            <p class="p-skill__text">デザインカンプを確認する際に、Figmaを使用しています。実装中のソースコードをGithub上にアップロードして、管理しています。</p>
+                            <h3 class="c-title p-skill__title">OTHER TOOLS</h3>
+                            <p class="p-skill__text">デザインカンプを確認する際に、Figmaを使用しています。書籍で勉強した知識を活かして、実装中のソースコードをGithub上にアップロードして、管理しています。</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="l-section p-works">
-            <h2 class="g-font c-head01">WEB-WORKS</h2>
-            <h3 class="c-head02">ウェブ作品紹介</h3>
-            <ul class="p-works__ul">
-                <li class="p-works__li">
-                    <a href="first-camp.html">
-                        <p class="p-works__img"><img src="assets/img/firstCamp.png" alt="" class="p-works__fit"></p>
-                        <p class="p-works__mask">+</p>
-                    </a>
-                    <div class="p-works__content">
-                        <p class="c-title">First Camp</p>
-                        <p class="p-works__summary">ソロキャンプレッスンサイト</p>
+        <section class="l-section p-work">
+            <div class="l-inner">
+                <h2 class="g-font c-head01">
+                    <p>WEB-WORK</p>
+                    <span>ウェブ作品紹介</span>
+                </h2>
+                <div class="p-work__list">
+                    <div class="p-work__item">
+                        <p class="p-work__img"><img src="assets/img/firstCamp.png" alt=""></p>
+                        <div class="p-work__content">
+                            <p class="p-work__title">
+                                <a href="first-camp.html">First Camp</a>
+                            </p>
+                            <p class="p-work__tag">専門学校個人制作 : ソロキャンプ向けのレッスンサイト</p>
+                        </div>
                     </div>
-                </li>
-                <li class="p-works__li">
-                    <a href="only.html">
-                        <p class="p-works__img"><img src="assets/img/only.png" alt="" class="p-works__fit"></p>
-                        <p class="p-works__mask">+</p>
-                    </a>
-                    <div class="p-works__content">
-                        <p class="c-title">ONLY</p>
-                        <p class="p-works__summary">チーム制作：メンズメイクのECサイト</p>
+                    <div class="p-work__item">
+                        <p class="p-work__img"><img src="assets/img/withNature.png" alt=""></p>
+                        <div class="p-work__content">
+                            <p class="p-work__title">
+                                <a href="with-nature.html">With Nature</a>
+                            </p>
+                            <p class="p-work__tag">専門学校個人制作 : アウトドアで行うウェディングサイト</p>
+                        </div>
                     </div>
-                </li>
-                <li class="p-works__li">
-                    <a href="with-nature.html">
-                        <p class="p-works__img"><img src="assets/img/withNature.png" alt="" class="p-works__fit"></p>
-                        <p class="p-works__mask">+</p>
-                    </a>
-                    <div class="p-works__content">
-                        <p class="c-title">With Nature</p>
-                        <p class="p-works__summary">アウトドアで行うウェディングサイト</p>
+                    <div class="p-work__item">
+                        <p class="p-work__img"><img src="assets/img/only.png" alt=""></p>
+                        <div class="p-work__content">
+                            <p class="p-work__title">
+                                <a href="with-nature.html">ONLY</a>
+                            </p>
+                            <p class="p-work__tag">専門学校チーム制作：メンズメイクのECサイト</p>
+                        </div>
                     </div>
-                </li>
-                <li class="p-works__li">
-                    <a href="konamon.html">
-                        <p class="p-works__img"><img src="assets/img/konamon.png" alt="" class="p-works__fit"></p>
-                        <p class="p-works__mask">+</p>
-                    </a>
-                    <div class="p-works__content">
-                        <p class="c-title">粉もんええやん</p>
-                        <p class="p-works__summary">Wordpress化：大阪の粉もんグルメサイト</p>
-                    </div>
-                </li>
-                
-                <li class="p-works__li">
-                    <a href="sea.html">
-                        <p class="p-works__img"><img src="assets/img/sea.png" alt="" class="p-works__fit"></p>
-                        <p class="p-works__mask">+</p>
-                    </a>
-                    <div class="p-works__content">
-                        <p class="c-title">Sea</p>
-                        <p class="p-works__summary">three.jsを使って海を表現しました。</p>
-                    </div>
-                </li>
-                
-                <li class="p-works__li">
-                    <a href="sakitore.html">
-                        <p class="p-works__img"><img src="assets/img/sakitore.png" alt="" class="p-works__fit p-works__fit--contain"></p>
-                        <p class="p-works__mask">+</p>
-                    </a>
-                    <div class="p-works__content">
-                        <p class="c-title">さきトレ</p>
-                        <p class="p-works__summary">チーム制作：トレンドをさきどりできる情報サイト</p>
-                    </div>
-                </li>
-            </ul>
+                </div>
+            </div>
         </section>
-        <section class="l-section p-works">
-            <h2 class="g-font c-head01">GRAPHIC-WORKS</h2>
-            <h3 class="c-head02">グラフィック作品紹介</h3>
-            <ul class="p-works__ul">
-                <li class="p-works__li">
-                    <a href="banner.html">
-                        <p class="p-works__img"><img src="assets/img/banner.png" alt="" class="p-works__fit"></p>
-                        <p class="p-works__mask">+</p>
-                    </a>
-                    <div class="p-works__content">
-                        <p class="c-title">クリスマスバナー</p>
-                        <p class="p-works__summary">ケンタッキー・フライドチキンのクリスマスのバナー</p>
+        <section class="l-section p-work">
+            <div class="l-inner">
+                <h2 class="g-font c-head01">
+                    <p>GRAPHIC-WORK</p>
+                    <span>グラフィック作品紹介</span>
+                </h2>
+                <div class="p-work__list">
+                    <div class="p-work__item">
+                        <p class="p-work__img"><img src="assets/img/banner.png" alt=""></p>
+                        <div class="p-work__content">
+                            <p class="p-work__title">
+                                <a href="banner.html">クリスマスバナー</a>
+                            </p>
+                            <p class="p-work__tag">専門学校個人制作 : ケンタッキー・フライドチキンのクリスマスのバナー</p>
+                        </div>
                     </div>
-                </li>
-                <li class="p-works__li">
-                    <a href="tabroid.html">
-                        <p class="p-works__img"><img src="assets/img/tabroid.png" alt="" class="p-works__fit"></p>
-                        <p class="p-works__mask">+</p>
-                    </a>
-                    <div class="p-works__content">
-                        <p class="c-title">沖縄絶景</p>
-                        <p class="p-works__summary">沖縄の絶景スポットをタブロイド紙にデザイン</p>
+                    <div class="p-work__item">
+                        <p class="p-work__img"><img src="assets/img/tabroid.png" alt=""></p>
+                        <div class="p-work__content">
+                            <p class="p-work__title">
+                                <a href="tabroid.html">沖縄絶景</a>
+                            </p>
+                            <p class="p-work__tag">専門学校個人制作 : 沖縄の絶景スポットをタブロイド紙にデザイン</p>
+                        </div>
                     </div>
-                </li>
-                <li class="p-works__li">
-                    <a href="ukrainePoster.html">
-                        <p class="p-works__img"><img src="assets/img/ukrainePoster.png" alt="" class="p-works__fit"></p>
-                        <p class="p-works__mask">+</p>
-                    </a>
-                    <div class="p-works__content">
-                        <p class="c-title">ウクライナ募金</p>
-                        <p class="p-works__summary">ウクライナの募金活動のポスター</p>
+                    <div class="p-work__item">
+                        <p class="p-work__img"><img src="assets/img/ukrainePoster.png" alt=""></p>
+                        <div class="p-work__content">
+                            <p class="p-work__title">
+                                <a href="ukrainePoster.html">ウクライナ募金</a>
+                            </p>
+                            <p class="p-work__tag">専門学校チーム制作：ウクライナの募金活動のポスター</p>
+                        </div>
                     </div>
-                </li>
-                <li class="p-works__li">
-                    <a href="oronamincPoster.html">
-                        <p class="p-works__img"><img src="assets/img/oronamincPoster.png" alt="" class="p-works__fit"></p>
-                        <p class="p-works__mask">+</p>
-                    </a>
-                    <div class="p-works__content">
-                        <p class="c-title">オロナミンC</p>
-                        <p class="p-works__summary">オロナミンCのポスター</p>
+                    <div class="p-work__item">
+                        <p class="p-work__img"><img src="assets/img/oronamincPoster.png" alt=""></p>
+                        <div class="p-work__content">
+                            <p class="p-work__title">
+                                <a href="ukrainePoster.html">オロナミンC</a>
+                            </p>
+                            <p class="p-work__tag">専門学校個人制作：オロナミンCのポスター</p>
+                        </div>
                     </div>
-                </li>
-            </ul>
+                </div>
+            </div>
         </section>
         <section class="l-section p-contact">
             <h2 class="g-font c-head01">CONTACT</h2>

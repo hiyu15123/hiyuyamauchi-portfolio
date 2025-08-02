@@ -1,7 +1,7 @@
 @use "../../global/variable" as *;
 @use "../../global/mixin" as *;
 .p-skill{
-    &__inner {
+    &__list {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 4.8rem 3.2rem;
@@ -50,20 +50,5 @@
     &__logo {
         display: flex;
         column-gap: 0.8rem;
-    }
-}
-
-@media (max-width: $sp) {
-
-    .p-skill{
-        &__wrapper {
-            grid-template-columns: 1fr;
-        }
-        &__item {
-            &--center {
-                grid-column: 1;
-                grid-row: 5;
-            }
-        }
     }
 }
