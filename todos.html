@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.typekit.net/umk2pba.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>WEB-WORKS Todos | HIYU YAMAUCHI</title>
+</head>
+<body>
+    <!-- Load header from an include file -->
+    <header class="l-header" id="l-header"></header>
+    <script>
+        fetch('include/header.html')
+            .then(response => response.text())
+            .then(html => {
+            document.getElementById('l-header').innerHTML = html;
+        });
+    </script>
+    <main>
+        <section class="l-section p-work">
+            <div class="l-inner">
+                <ul class="p-work__breadcrumb">
+                    <li><a href="/">TOP</a></li>
+                    <li>WEB-WORKS | Todos</li>
+                </ul>
+                <p class="p-work__thumb"><img src="/assets/img/img_todos.jpg" alt="Todos"></p>
+                <div class="p-work__content">
+                    <div class="p-work__card">
+                        <h2 class="p-work__title">作品名</h2>
+                        <p>Todos</p>
+                    </div>
+                    <div class="p-work__card">
+                        <h2 class="p-work__title">サイトURL</h2>
+                        <p><a href="https://hiyu15123.github.io/todos/" target="_blank" rel="noopener noreferrer">https://hiyu15123.github.io/todos/</a></p>
+                    </div>
+                    <div class="p-work__card">
+                        <h2 class="p-work__title">作品概要</h2>
+                        <p>Vue.jsに興味があり、基礎の練習としてTodoリストを作成しました。入力欄にタスクを入力して、タスクを追加します。画面をリロードしても、追加したタスクは残るように実装しました。</p>
+                    </div>
+                    <div class="p-work__card">
+                        <h2 class="p-work__title">アピール・こだわり</h2>
+                        <p>タスクの順番を変更できるようにVueの外部ライブラリ「VueDraggable」を使用し、ドラッグ&ドラッグで直感的に操作できるように実装しました。また途中で、タスクの内容を変更したい時でも、編集ボタンを押して、再入力できるように実装しました。</p>
+                    </div>
+                    <div class="p-work__card">
+                        <h2 class="p-work__title">使用技術</h2>
+                        <p>HTML、CSS、JavaScript（Vue）、Vite</p>
+                    </div>
+                    <div class="p-work__card">
+                        <h2 class="p-work__title">制作時間</h2>
+                        <p>1時間38分</p>
+                    </div>
+                    <div class="p-work__card">
+                        <h2 class="p-work__title">Gitリポジトリ</h2>
+                        <p><a href="https://github.com/hiyu15123/todos" target="_blank" rel="noopener noreferrer">https://github.com/hiyu15123/todos</a></p>
+                    </div>
+                </div>
+                <div class="p-work__pagination">
+                    <a href="demo-site.html" class="p-work__prev">前の作品を見る</a>
+                    <p>2 / 4</p>
+                    <a href="wp-demo-site.html" class="p-work__next">次の作品を見る</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Load footer from an include file -->
+    <footer class="l-footer" id="l-footer"></footer>
+    <script>
+        fetch('include/footer.html')
+            .then(response => response.text())
+            .then(html => {
+            document.getElementById('l-footer').innerHTML = html;
+        });
+    </script>
+</body>
+</html>
