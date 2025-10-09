@@ -9,57 +9,59 @@
     <title>GRAPHIC-WORKS 沖縄絶景 | HIYU YAMAUCHI</title>
 </head>
 <body>
-    <header class="l-header">
-        <div class="l-header__wrapper">
-            <p class="l-header__name"><a href="index.html">HIYU YAMAUCHI PORTFOLIO</a></p>
-            <p class="l-header__btn"><a href="mailto:hiyu.yamauchi@gmail.com">contact</a></p>
-        </div>
-    </header>
-        <main>
-            <section class="p-work">
-                <ol class="p-work__breadcrumbs">
-                    <li class="p-work__arrow"><a href="index.html">TOP</a></li>
-                    <li class="p-work__li"><a href="tabroid.html">GRAPHIC-WORKS | 沖縄絶景</a></li>
-                </ol>
-                <div class="p-work__wrapper">
-                    <h1 class="p-work__heading">沖縄絶景</h1>
-                    <p class="p-work__img"><img src="img/tabroid.png" alt="" class="p-work__fit"></p>
-                    <div class="p-work__detail">
-                        <dl class="p-work__item">
-                            <dt class="c-title p-work__title">制作期間</dt>
-                            <dd class="c-text p-work__text">5時間 (2022.9)</dd>
-                        </dl>
-                        <dl class="p-work__item">
-                            <dt class="c-title p-work__title">人数</dt>
-                            <dd class="c-text p-work__text">1人</dd>
-                        </dl>
-                        <dl class="p-work__item">
-                            <dt class="c-title p-work__title">担当</dt>
-                            <dd class="c-text p-work__text">デザイン</dd>
-                        </dl>
-                        <dl class="p-work__item">
-                            <dt class="c-title p-work__title">使用技術</dt>
-                            <dd class="c-text p-work__text">Adobe Illustrator</dd>
-                        </dl>
-                        <dl class="p-work__item">
-                            <dt class="c-title p-work__title">作品概要</dt>
-                            <dd class="c-text p-work__text">架空のタブロイド紙のデザインを制作しました。沖縄の絶景スポットをざっくりと紹介しています。</dd>
-                        </dl>
-                        <dl class="p-work__item">
-                            <dt class="c-title p-work__title">こだわり</dt>
-                            <dd class="c-text p-work__text">写真を加えてイメージしやすい様にしました。また色使いやフォントで沖縄の雰囲気を演出しました。</dd>
-                        </dl>
+    <header class="l-header" id="l-header"></header>
+    <script>
+        fetch('include/header.html')
+            .then(response => response.text())
+            .then(html => {
+            document.getElementById('l-header').innerHTML = html;
+        });
+    </script>
+    <main>
+        <section class="l-section p-work">
+            <div class="l-inner">
+                <ul class="p-work__breadcrumb">
+                    <li><a href="/">TOP</a></li>
+                    <li>GRAPHIC-WORKS | 沖縄絶景タブロイド</li>
+                </ul>
+                <p class="p-work__thumb -contain"><img src="/assets/img/tabroid.png" alt="タブロイド"></p>
+                <div class="p-work__content">
+                    <div class="p-work__card">
+                        <h2 class="p-work__title">作品名</h2>
+                        <p>沖縄絶景タブロイド</p>
+                    </div>
+                    <div class="p-work__card">
+                        <h2 class="p-work__title">作品概要</h2>
+                        <p>架空のタブロイド紙のデザインを制作しました。沖縄の絶景スポットをざっくりと紹介しています。</p>
+                    </div>
+                    <div class="p-work__card">
+                        <h2 class="p-work__title">アピール・こだわり</h2>
+                        <p>写真を加えてイメージしやすい様にしました。また色使いやフォントで沖縄の雰囲気を演出しました。</p>
+                    </div>
+                    <div class="p-work__card">
+                        <h2 class="p-work__title">使用技術</h2>
+                        <p>Adobe Illustrator</p>
+                    </div>
+                    <div class="p-work__card">
+                        <h2 class="p-work__title">制作時間</h2>
+                        <p>5時間 (2021.9)</p>
                     </div>
                 </div>
-                <div class="p-work__page-nation">
+                <div class="p-work__pagination">
                     <a href="banner.html" class="p-work__prev">前の作品を見る</a>
                     <p>2 / 4</p>
-                    <a href="ukrainePoster.html" class="p-work__next">次の作品を見る</a>
+                    <a href="poster-ukraine.html" class="p-work__next">次の作品を見る</a>
                 </div>
-            </section>
-        </main>
-    <footer class="l-footer">
-        <div class="l-footer__text">© HIYU YAMAUCHI PORTFOLIO</div>
-    </footer>
+            </div>
+        </section>
+    </main>
+    <footer class="l-footer" id="l-footer"></footer>
+    <script>
+        fetch('include/footer.html')
+            .then(response => response.text())
+            .then(html => {
+            document.getElementById('l-footer').innerHTML = html;
+        });
+    </script>
 </body>
 </html>

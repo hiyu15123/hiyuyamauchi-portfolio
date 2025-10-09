@@ -596,19 +596,21 @@ main {
 }
 .p-message__title {
   font-size: 2.4rem;
-  letter-spacing: 0.32rem;
   font-weight: bold;
   text-align: center;
 }
 @media (max-width: 767px) {
   .p-message__title {
-    font-size: 2.4rem;
-    letter-spacing: 0.24rem;
-    line-height: 3.2rem;
+    font-size: 2rem;
   }
 }
 .p-message__title + * {
-  margin-top: 4.8rem;
+  margin-top: 4.2rem;
+}
+@media (max-width: 767px) {
+  .p-message__title + * {
+    margin-top: 2.4rem;
+  }
 }
 .p-message__desc {
   text-align: center;
@@ -745,12 +747,12 @@ main {
 .p-work__list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 4.8rem 3.2rem;
+  gap: 3.2rem;
 }
 @media (max-width: 767px) {
   .p-work__list {
     grid-template-columns: repeat(1, 1fr);
-    gap: 2.4rem;
+    gap: 2rem;
   }
 }
 .p-work__item a {
@@ -790,6 +792,13 @@ main {
 }
 .p-work__thumb + * {
   margin-top: 3.2rem;
+}
+.p-work__thumb.-contain {
+  background-color: var(--color-base);
+}
+.p-work__thumb.-contain img {
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .p-work__thumb img {
   width: 100%;
@@ -891,4 +900,16 @@ main {
 
 .u-mt16 {
   margin-top: 1.6rem;
+}
+
+@media (min-width: 768px) {
+  .u-hidden-pc {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .u-hidden-sp {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
