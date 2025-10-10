@@ -877,6 +877,33 @@ main {
 .p-work__prev:hover, .p-work__next:hover {
   border-bottom: 0;
 }
+.p-work__photo {
+  width: 100%;
+  max-width: 1000px;
+  margin-inline: auto;
+}
+.p-work__photo + * {
+  margin-top: 2.4rem;
+}
+.p-work__photo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.p-work__photo img + * {
+  margin-top: 0.6rem;
+}
+.p-work__caption {
+  font-size: 1.4rem;
+  text-align: center;
+  display: block;
+  color: #888;
+}
+
+* + .p-work__photos {
+  margin-top: 1.6rem;
+}
 
 .p-contact__btn a {
   height: 16rem;
