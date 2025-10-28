@@ -702,11 +702,6 @@ main {
     grid-template-columns: 1fr;
   }
 }
-@media (min-width: 768px) {
-  .p-skill__item:last-child {
-    grid-column: 1/3;
-  }
-}
 .p-skill__img {
   display: flex;
   gap: 0.8rem;
@@ -737,6 +732,14 @@ main {
   .p-skill__title + * {
     margin-top: 1rem;
   }
+}
+.p-skill__subtitle {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #555;
+}
+.p-skill__subtitle + * {
+  margin-top: 1rem;
 }
 .p-skill__logo {
   display: flex;
