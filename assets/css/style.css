@@ -691,6 +691,95 @@ main {
   }
 }
 
+.p-background__list {
+  display: grid;
+  gap: 4.8rem;
+}
+@media (max-width: 767px) {
+  .p-background__list {
+    gap: 3.2rem;
+  }
+}
+.p-background__item {
+  display: grid;
+  gap: 1.6rem 3.2rem;
+}
+@media (min-width: 768px) {
+  .p-background__item {
+    grid-template-columns: 19rem 1fr;
+  }
+}
+@media (max-width: 767px) {
+  .p-background__item {
+    gap: 1.2rem;
+  }
+}
+.p-background__year {
+  font-size: 1.8rem;
+  letter-spacing: 0.2rem;
+}
+@media (max-width: 767px) {
+  .p-background__year {
+    font-size: 1.6rem;
+  }
+}
+.p-background__content {
+  position: relative;
+  padding-left: 2.4rem;
+}
+@media (max-width: 767px) {
+  .p-background__content {
+    padding-left: 1.6rem;
+  }
+}
+.p-background__content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 100%;
+  background-color: var(--color-pri);
+}
+.p-background__title + * {
+  margin-top: 1.2rem;
+}
+@media (max-width: 767px) {
+  .p-background__title + * {
+    margin-top: 1rem;
+  }
+}
+.p-background__desc + * {
+  margin-top: 1.2rem;
+}
+@media (max-width: 767px) {
+  .p-background__desc + * {
+    margin-top: 1rem;
+  }
+}
+.p-background__note {
+  display: grid;
+  gap: 0.4rem;
+}
+.p-background__note li {
+  position: relative;
+  padding-left: 1.6rem;
+}
+.p-background__note li::before {
+  content: "";
+  position: absolute;
+  top: 1.4rem;
+  left: 0;
+  width: 0.8rem;
+  height: 1px;
+  background-color: var(--color-pri);
+}
+@media (max-width: 767px) {
+  .p-background__note li::before {
+    top: 1.2rem;
+  }
+}
+
 .p-skill__list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
