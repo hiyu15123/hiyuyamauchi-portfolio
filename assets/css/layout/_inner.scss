@@ -8,6 +8,9 @@
       min-width: 100%;
       padding-inline: 2rem;
    }
+   &.-sm {
+      max-width: 80rem;
+   }
    &.-lg {
       max-width: 100%;
    }
