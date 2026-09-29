@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="既存の静的サイトをWordPress化した制作物。カスタム投稿タイプとカスタムブロックを実装しました。">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.typekit.net/umk2pba.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>WEB-WORKS demo-site | HIYU YAMAUCHI</title>
+    <title>WEB-WORKS WordPress化デモサイト | HIYU YAMAUCHI</title>
 </head>
 <body>
     <!-- Load header from an include file -->
@@ -21,16 +22,15 @@
     <main>
         <section class="l-section p-work">
             <div class="l-inner">
-                <ul class="p-work__breadcrumb">
-                    <li><a href="index.html">TOP</a></li>
-                    <li>WEB-WORKS | wp-demo-site</li>
-                </ul>
-                <p class="p-work__thumb"><img src="assets/img/img_wp-demo-site.jpg" alt="wp-demo-site"></p>
+                <nav class="p-work__breadcrumb" aria-label="パンくずリスト">
+                    <ol>
+                        <li><a href="index.html">TOP</a></li>
+                        <li aria-current="page">WEB-WORKS | WordPress化デモサイト</li>
+                    </ol>
+                </nav>
+                <h1 class="p-work__heading">WordPress化デモサイト</h1>
+                <p class="p-work__thumb"><img src="assets/img/img_wp-demo-site.jpg" alt="WordPress化したデモサイトの画面"></p>
                 <div class="p-work__content">
-                    <div class="p-work__card">
-                        <h2 class="p-work__title">作品名</h2>
-                        <p>WordPress化デモサイト</p>
-                    </div>
                     <div class="p-work__card">
                         <h2 class="p-work__title">サイトURL</h2>
                         <p><a href="http://wp-demo-site.her.jp/" target="_blank" rel="noopener noreferrer">http://wp-demo-site.her.jp/</a></p>
@@ -44,11 +44,11 @@
                         <p>ループ処理やカスタム投稿タイプ、カスタムフィールドなど、WordPressに必要となる仕組みを活用してサイトを設計しました。投稿データを取得してトップページに最新のお知らせを自動反映させるほか、独自の投稿タイプを導入して情報を分類・管理しやすくするなど、運用を意識した構成にしています。</p>
                         <div class="p-work__photos">
                             <p class="p-work__photo">
-                                <img src="assets/img/img_wp-demo-site01.jpg" alt="カスタム投稿タイプ">
+                                <img src="assets/img/img_wp-demo-site01.jpg" loading="lazy" decoding="async" alt="カスタム投稿タイプの管理画面">
                                 <span class="p-work__caption">CPT UI（プラグイン） - カスタム投稿タイプ作成画面</span>
                             </p>
                             <p class="p-work__photo">
-                                <img src="assets/img/img_wp-demo-site02.jpg" alt="カスタムブロック">
+                                <img src="assets/img/img_wp-demo-site02.jpg" loading="lazy" decoding="async" alt="カスタムブロックの編集画面">
                                 <span class="p-work__caption">ACF（プラグイン） - カスタムフィールド</span>
                             </p>
                         </div>

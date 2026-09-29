@@ -75,17 +75,31 @@
         line-height: 1.5;
     }
     &__breadcrumb {
-        display: flex;
-        align-items: center;
-        gap: 2rem;
-        font-size: 1.4rem;
         padding-top: 4.8rem;
-        @include sp {
-            font-size: 1.2rem;
-            margin-bottom: 1.2rem;
+        & ol {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            font-size: 1.4rem;
+            @include sp {
+                font-size: 1.2rem;
+                margin-bottom: 1.2rem;
+            }
         }
         &+* {
             margin-top: 2.5rem;
+        }
+    }
+    &__heading {
+        font-size: 2.8rem;
+        font-weight: bold;
+        line-height: 1.5;
+        letter-spacing: 0.24rem;
+        @include sp {
+            font-size: 2.2rem;
+        }
+        &+* {
+            margin-top: 2.4rem;
         }
     }
     &__breadcrumb li a {

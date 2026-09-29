@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="練習として制作した静的コーポレートサイトのトップページ。GSAPやSwiperを用いたUI実装とgulpでの開発環境構築を行いました。">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.typekit.net/umk2pba.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>WEB-WORKS demo-site | HIYU YAMAUCHI</title>
+    <title>WEB-WORKS デモコーポレートサイト | HIYU YAMAUCHI</title>
 </head>
 <body>
     <!-- Load header from an include file -->
@@ -21,16 +22,15 @@
     <main>
         <section class="l-section p-work">
             <div class="l-inner">
-                <ul class="p-work__breadcrumb">
-                    <li><a href="index.html">TOP</a></li>
-                    <li>WEB-WORKS | demo-site</li>
-                </ul>
-                <p class="p-work__thumb"><img src="assets/img/img_demo-site.jpg" alt="demo-site"></p>
+                <nav class="p-work__breadcrumb" aria-label="パンくずリスト">
+                    <ol>
+                        <li><a href="index.html">TOP</a></li>
+                        <li aria-current="page">WEB-WORKS | デモコーポレートサイト</li>
+                    </ol>
+                </nav>
+                <h1 class="p-work__heading">デモコーポレートサイト</h1>
+                <p class="p-work__thumb"><img src="assets/img/img_demo-site.jpg" alt="デモコーポレートサイトのトップページ"></p>
                 <div class="p-work__content">
-                    <div class="p-work__card">
-                        <h2 class="p-work__title">作品名</h2>
-                        <p>デモコーポレートサイト</p>
-                    </div>
                     <div class="p-work__card">
                         <h2 class="p-work__title">サイトURL</h2>
                         <p><a href="https://hiyu15123.github.io/demo-site/" target="_blank" rel="noopener noreferrer">https://hiyu15123.github.io/demo-site/</a></p>

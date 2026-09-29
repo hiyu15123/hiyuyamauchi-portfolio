@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Reactで制作したBMIと体型を診断できるWebアプリ。フックを用いた状態管理と計算ロジックを実装しました。">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.typekit.net/umk2pba.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>WEB-WORKS Todos | HIYU YAMAUCHI</title>
+    <title>WEB-WORKS 体型診断アプリ | HIYU YAMAUCHI</title>
 </head>
 <body>
     <!-- Load header from an include file -->
@@ -21,16 +22,15 @@
     <main>
         <section class="l-section p-work">
             <div class="l-inner">
-                <ul class="p-work__breadcrumb">
-                    <li><a href="index.html">TOP</a></li>
-                    <li>WEB-WORKS | 体型診断アプリ</li>
-                </ul>
-                <p class="p-work__thumb"><img src="assets/img/img_body-type-app.jpg" alt="Todos"></p>
+                <nav class="p-work__breadcrumb" aria-label="パンくずリスト">
+                    <ol>
+                        <li><a href="index.html">TOP</a></li>
+                        <li aria-current="page">WEB-WORKS | 体型診断アプリ</li>
+                    </ol>
+                </nav>
+                <h1 class="p-work__heading">体型診断アプリ</h1>
+                <p class="p-work__thumb"><img src="assets/img/img_body-type-app.jpg" alt="体型診断アプリの画面"></p>
                 <div class="p-work__content">
-                    <div class="p-work__card">
-                        <h2 class="p-work__title">作品名</h2>
-                        <p>体型診断アプリ</p>
-                    </div>
                     <div class="p-work__card">
                         <h2 class="p-work__title">サイトURL</h2>
                         <p><a href="https://hiyu15123.github.io/body-type-app/" target="_blank" rel="noopener noreferrer">https://hiyu15123.github.io/body-type-app/</a></p>

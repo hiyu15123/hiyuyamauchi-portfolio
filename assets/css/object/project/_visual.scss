@@ -10,9 +10,11 @@
         text-align: center;
     }
     &__title {
+        display: block;
         font-size: max(6.5vw, 4rem);
     }
     &__subtitle {
+        display: block;
         font-size: max(3vw, 2.4rem);
     }
     &__scroll {

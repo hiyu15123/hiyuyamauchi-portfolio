@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Vueで制作したTodoリスト。タスクの追加・削除に加え、ローカルストレージへの保存と並び替えを実装しました。">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.typekit.net/umk2pba.css">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -21,16 +22,15 @@
     <main>
         <section class="l-section p-work">
             <div class="l-inner">
-                <ul class="p-work__breadcrumb">
-                    <li><a href="index.html">TOP</a></li>
-                    <li>WEB-WORKS | Todos</li>
-                </ul>
-                <p class="p-work__thumb"><img src="assets/img/img_todos.jpg" alt="Todos"></p>
+                <nav class="p-work__breadcrumb" aria-label="パンくずリスト">
+                    <ol>
+                        <li><a href="index.html">TOP</a></li>
+                        <li aria-current="page">WEB-WORKS | Todos</li>
+                    </ol>
+                </nav>
+                <h1 class="p-work__heading">Todos</h1>
+                <p class="p-work__thumb"><img src="assets/img/img_todos.jpg" alt="Todoリストアプリの画面"></p>
                 <div class="p-work__content">
-                    <div class="p-work__card">
-                        <h2 class="p-work__title">作品名</h2>
-                        <p>Todos</p>
-                    </div>
                     <div class="p-work__card">
                         <h2 class="p-work__title">サイトURL</h2>
                         <p><a href="https://hiyu15123.github.io/todos/" target="_blank" rel="noopener noreferrer">https://hiyu15123.github.io/todos/</a></p>
