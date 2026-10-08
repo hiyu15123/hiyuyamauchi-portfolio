@@ -926,6 +926,21 @@ main {
 .p-work__title + * {
   margin-top: 0.8rem;
 }
+.p-work__skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+.p-work__skills li {
+  font-size: 1.2rem;
+  line-height: 1;
+  padding: 0.5rem 1rem;
+  border: 1px solid #333;
+  border-radius: 10rem;
+}
+.p-work__skills + * {
+  margin-top: 0.8rem;
+}
 .p-work__tag {
   font-size: 1.4rem;
   color: #888;

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="前職で制作した、広島・福山と大阪・関西の貸切バス・タクシー会社「ニコニコ観光株式会社」のコーポレートサイト（WordPress）。">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.typekit.net/umk2pba.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>WEB-WORKS ニコニコ観光株式会社 | HIYU YAMAUCHI</title>
+</head>
+<body>
+    <!-- Load header from an include file -->
+    <header class="l-header" id="l-header"></header>
+    <script>
+        fetch('include/header.html')
+            .then(response => response.text())
+            .then(html => {
+            document.getElementById('l-header').innerHTML = html;
+        });
+    </script>
+    <main>
+        <section class="l-section p-work">
+            <div class="l-inner">
+                <nav class="p-work__breadcrumb" aria-label="パンくずリスト">
+                    <ol>
+                        <li><a href="index.html">TOP</a></li>
+                        <li aria-current="page">WEB-WORKS | ニコニコ観光株式会社</li>
+                    </ol>
+                </nav>
+                <h1 class="p-work__heading">ニコニコ観光株式会社</h1>
+                <p class="p-work__thumb"><img src="assets/img/img_niko-kan.jpg" alt="ニコニコ観光株式会社の画面"></p>
+                <div class="p-work__content">
+                    <div class="p-work__card">
+                        <h2 class="p-work__title">サイトURL</h2>
+                        <p><a href="https://niko-kan.co.jp/" target="_blank" rel="noopener noreferrer">https://niko-kan.co.jp/</a></p>
+                    </div>
+                    <div class="p-work__card">
+                        <h2 class="p-work__title">作品概要</h2>
+                        <p>1960年創業、広島・福山と大阪・関西の二拠点で貸切バス・タクシーを運行するニコニコ観光株式会社のコーポレートサイトです。前職の制作会社で制作した、実際のお客様のサイトです（掲載許可取得済み）。</p>
+                    </div>
+                    <div class="p-work__card">
+                        <h2 class="p-work__title">担当範囲</h2>
+                        <p>ディレクション、デザイン、実装（WordPress、Kintone・Instagram連携）、タクシー車内の写真撮影</p>
+                    </div>
+                    <div class="p-work__card">
+                        <h2 class="p-work__title">アピール・こだわり</h2>
+                        <p>ディレクションからデザイン、実装まで一貫して担当しました。サイト全体の設計は自分で組み立て、コードの実装はClaude Codeを活用して進めています。WordPressで構築し、Kintoneとのデータ連携をAPIで実装したほか、公式Instagramの投稿もサイトに連携しています。お問い合わせフォームはContact Form 7で要件に合わせて作成し、可変式にしています。下層ページもモジュール単位で組み、パーツを使い回せる構成にしています。</p>
+                    </div>
+                    <div class="p-work__card">
+                        <h2 class="p-work__title">使用技術</h2>
+                        <p>HTML、CSS、JavaScript、WordPress、Kintone（API連携）、Instagram連携、Claude Code</p>
+                    </div>
+                </div>
+                <div class="p-work__pagination">
+                    <a href="fitness-ai-memo.html" class="p-work__prev">前の作品を見る</a>
+                    <p>1 / 6</p>
+                    <a href="demo-site.html" class="p-work__next">次の作品を見る</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Load footer from an include file -->
+    <footer class="l-footer" id="l-footer"></footer>
+    <script>
+        fetch('include/footer.html')
+            .then(response => response.text())
+            .then(html => {
+            document.getElementById('l-footer').innerHTML = html;
+        });
+    </script>
+</body>
+</html>

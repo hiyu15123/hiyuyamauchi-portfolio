@@ -69,6 +69,21 @@
             margin-top: 0.8rem;
         }
     }
+    &__skills {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.6rem;
+        & li {
+            font-size: 1.2rem;
+            line-height: 1;
+            padding: 0.5rem 1rem;
+            border: 1px solid #333;
+            border-radius: 10rem;
+        }
+        & + * {
+            margin-top: 0.8rem;
+        }
+    }
     &__tag {
         font-size: 1.4rem;
         color: #888;
