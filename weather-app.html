@@ -1,77 +1,118 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="フレームワークを使わずJavaScriptで制作した天気予報アプリ。Open-Meteo APIから都市や現在地の今日・明日・1時間ごとの天気を表示します。">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.typekit.net/umk2pba.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>WEB-WORKS 天気予報アプリ | HIYU YAMAUCHI</title>
-</head>
-<body>
-    <!-- Load header from an include file -->
-    <header class="l-header" id="l-header"></header>
-    <script>
-        fetch('include/header.html')
-            .then(response => response.text())
-            .then(html => {
-            document.getElementById('l-header').innerHTML = html;
-        });
-    </script>
-    <main>
-        <section class="l-section p-work">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta
+         name="description"
+         content="フレームワークを使わずJavaScriptで制作した天気予報アプリ。Open-Meteo APIから都市や現在地の今日・明日・1時間ごとの天気を表示します。"
+      />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="https://use.typekit.net/umk2pba.css" />
+      <link rel="stylesheet" href="assets/css/style.css" />
+      <title>WEB-WORKS 天気予報アプリ | HIYU YAMAUCHI</title>
+   </head>
+   <body>
+      <!-- Load header from an include file -->
+      <header class="l-header" id="l-header"></header>
+      <script>
+         fetch("include/header.html")
+            .then((response) => response.text())
+            .then((html) => {
+               document.getElementById("l-header").innerHTML = html;
+            });
+      </script>
+      <main>
+         <section class="l-section p-work">
             <div class="l-inner">
-                <nav class="p-work__breadcrumb" aria-label="パンくずリスト">
-                    <ol>
-                        <li><a href="index.html">TOP</a></li>
-                        <li aria-current="page">WEB-WORKS | 天気予報アプリ</li>
-                    </ol>
-                </nav>
-                <h1 class="p-work__heading">天気予報アプリ</h1>
-                <p class="p-work__thumb"><img src="assets/img/img_weather-app.jpg" alt="天気予報アプリの画面"></p>
-                <div class="p-work__content">
-                    <div class="p-work__card">
-                        <h2 class="p-work__title">サイトURL</h2>
-                        <p><a href="https://hiyu15123.github.io/weather-app/" target="_blank" rel="noopener noreferrer">https://hiyu15123.github.io/weather-app/</a></p>
-                    </div>
-                    <div class="p-work__card">
-                        <h2 class="p-work__title">作品概要</h2>
-                        <p>Open-Meteo APIを使用した天気予報アプリです。都市を選ぶと、今日・明日の天気（最高・最低気温、6時間ごとの降水確率）と、現在時刻から24時間先までの1時間ごとの天気を表示します。位置情報を使って現在地の天気を表示することもでき、読み込み中やエラー時にはメッセージを表示します。</p>
-                    </div>
-                    <div class="p-work__card">
-                        <h2 class="p-work__title">JavaScriptの工夫</h2>
-                        <p>フレームワークを使わず、JavaScriptの基礎を確かめながら制作しました。天気の取得はfetchとasync/awaitで書き、レスポンスのokを確認して失敗時はエラーを投げ、try...catchで「読み込み中」「取得失敗」の表示に切り替えています。ブラウザの位置情報取得はコールバック形式のため、new Promiseで包んでawaitで扱えるようにし、許可されなかった場合は都市の選択を促すメッセージを出しています。APIから受け取った1時間ごとのデータは、findIndexで現在時刻の位置を探してsliceで24時間分を切り出し、map・joinで表に組み立てています。ファイルはAPI通信・位置情報・描画・都市データなど役割ごとにESモジュールで分け、どこで問題が起きたか追いやすく、変更が1か所で済む構成にしました。</p>
-                    </div>
-                    <div class="p-work__card">
-                        <h2 class="p-work__title">アクセシビリティ</h2>
-                        <p>表の見出しにはscopeを付けて見出しとデータを結びつけ、画面上は見えないcaptionで表の内容を伝えています。天気の絵文字は読み上げが冗長にならないようaria-hiddenにし、天気名はテキストで表示しています。表示の切り替わりはaria-liveで読み上げソフトにも伝わるようにし、横スクロールする表にはtabindexを付けてキーボードでもスクロールできるようにしました。キーボードだけで操作でき、Lighthouseのアクセシビリティスコアは100です。</p>
-                    </div>
-                    <div class="p-work__card">
-                        <h2 class="p-work__title">使用技術</h2>
-                        <p>HTML、SCSS、JavaScript（フレームワークなし）、Open-Meteo API</p>
-                    </div>
-                    <div class="p-work__card">
-                        <h2 class="p-work__title">Gitリポジトリ</h2>
-                        <p><a href="https://github.com/hiyu15123/weather-app" target="_blank" rel="noopener noreferrer">https://github.com/hiyu15123/weather-app</a></p>
-                    </div>
-                </div>
-                <div class="p-work__pagination">
-                    <a href="niko-kan.html" class="p-work__prev">前の作品を見る</a>
-                    <p>2 / 7</p>
-                    <a href="demo-site.html" class="p-work__next">次の作品を見る</a>
-                </div>
+               <nav class="p-work__breadcrumb" aria-label="パンくずリスト">
+                  <ol>
+                     <li><a href="index.html">TOP</a></li>
+                     <li aria-current="page">WEB-WORKS | 天気予報アプリ</li>
+                  </ol>
+               </nav>
+               <h1 class="p-work__heading">天気予報アプリ</h1>
+               <p class="p-work__thumb">
+                  <img
+                     src="assets/img/img_weather-app.jpg"
+                     alt="天気予報アプリの画面"
+                  />
+               </p>
+               <div class="p-work__content">
+                  <div class="p-work__card">
+                     <h2 class="p-work__title">サイトURL</h2>
+                     <p>
+                        <a
+                           href="https://hiyu15123.github.io/weather-app/"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           >https://hiyu15123.github.io/weather-app/</a
+                        >
+                     </p>
+                  </div>
+                  <div class="p-work__card">
+                     <h2 class="p-work__title">作品概要</h2>
+                     <p>
+                        Open-Meteo
+                        APIを使用した天気予報アプリです。都市を選ぶと、今日・明日の天気（最高・最低気温、6時間ごとの降水確率）と、現在時刻から24時間先までの1時間ごとの天気を表示します。位置情報を使って現在地の天気を表示することもでき、読み込み中やエラー時にはメッセージを表示します。
+                     </p>
+                  </div>
+                  <div class="p-work__card">
+                     <h2 class="p-work__title">JavaScriptの工夫</h2>
+                     <p>
+                        実装はすべてClaude Codeを活用して制作しました。生成されたコードは一つひとつ仕組みを確認し、理解したうえで反映しています。天気の取得はfetchとasync/awaitで書き、レスポンスのokを確認して失敗時はエラーを投げ、「読み込み中」「取得失敗」の表示に切り替えています。ブラウザの位置情報取得はコールバック形式のため、new
+                        Promiseで包んでawaitで扱えるようにし、許可されなかった場合は都市の選択を促すメッセージを出しています。ファイルは役割ごとにESモジュールで分け、どこで問題が起きたか追いやすく、変更が1か所で済む構成にしました。
+                     </p>
+                  </div>
+                  <div class="p-work__card">
+                     <h2 class="p-work__title">アクセシビリティ</h2>
+                     <p>
+                        表の見出しにはscopeを付けて見出しとデータを結びつけ、画面上は見えないcaptionで表の内容を伝えています。天気の絵文字は読み上げが冗長にならないようaria-hiddenにし、天気名はテキストで表示しています。表示の切り替わりはaria-liveで読み上げソフトにも伝わるようにし、横スクロールする表はキーボードだけで操作でき、Lighthouseのアクセシビリティスコアは100です。
+                     </p>
+                  </div>
+                  <div class="p-work__card">
+                     <h2 class="p-work__title">制作時間</h2>
+                     <p>13時間</p>
+                  </div>
+                  <div class="p-work__card">
+                     <h2 class="p-work__title">使用技術</h2>
+                     <p>
+                        HTML、SCSS、JavaScript（フレームワークなし）、Open-Meteo
+                        API、Claude Code
+                     </p>
+                  </div>
+                  <div class="p-work__card">
+                     <h2 class="p-work__title">Gitリポジトリ</h2>
+                     <p>
+                        <a
+                           href="https://github.com/hiyu15123/weather-app"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           >https://github.com/hiyu15123/weather-app</a
+                        >
+                     </p>
+                  </div>
+               </div>
+               <div class="p-work__pagination">
+                  <a href="niko-kan.html" class="p-work__prev"
+                     >前の作品を見る</a
+                  >
+                  <p>2 / 7</p>
+                  <a href="demo-site.html" class="p-work__next"
+                     >次の作品を見る</a
+                  >
+               </div>
             </div>
-        </section>
-    </main>
-    <!-- Load footer from an include file -->
-    <footer class="l-footer" id="l-footer"></footer>
-    <script>
-        fetch('include/footer.html')
-            .then(response => response.text())
-            .then(html => {
-            document.getElementById('l-footer').innerHTML = html;
-        });
-    </script>
-</body>
+         </section>
+      </main>
+      <!-- Load footer from an include file -->
+      <footer class="l-footer" id="l-footer"></footer>
+      <script>
+         fetch("include/footer.html")
+            .then((response) => response.text())
+            .then((html) => {
+               document.getElementById("l-footer").innerHTML = html;
+            });
+      </script>
+   </body>
 </html>

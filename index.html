@@ -1,357 +1,586 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="山内飛勇のポートフォリオサイト。Web制作会社とWebマーケティング会社でのフロントエンド実務、制作物、スキルを掲載しています。">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.typekit.net/umk2pba.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&amp;display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&amp;display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <script src="assets/js/main.js" defer></script>
-    <title>HIYU YAMAUCHI PORTFOLIO</title>
-</head>
-<body>
-    <!-- Load header from an include file -->
-    <header class="l-header" id="l-header"></header>
-    <script>
-        fetch('include/header.html')
-            .then(response => response.text())
-            .then(html => {
-            document.getElementById('l-header').innerHTML = html;
-        });
-    </script>
-    <main>
-        <section class="l-section p-visual">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta
+         name="description"
+         content="山内飛勇のポートフォリオサイト。Web制作会社とWebマーケティング会社でのフロントエンド実務、制作物、スキルを掲載しています。"
+      />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="https://use.typekit.net/umk2pba.css" />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&amp;display=swap"
+         rel="stylesheet"
+         media="print"
+         onload="this.media = 'all'"
+      />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&amp;display=swap"
+         rel="stylesheet"
+         media="print"
+         onload="this.media = 'all'"
+      />
+      <link rel="stylesheet" href="assets/css/style.css" />
+      <script src="assets/js/main.js" defer></script>
+      <title>HIYU YAMAUCHI PORTFOLIO</title>
+   </head>
+   <body>
+      <!-- Load header from an include file -->
+      <header class="l-header" id="l-header"></header>
+      <script>
+         fetch("include/header.html")
+            .then((response) => response.text())
+            .then((html) => {
+               document.getElementById("l-header").innerHTML = html;
+            });
+      </script>
+      <main>
+         <section class="l-section p-visual">
             <div class="p-visual__wrapper">
-                <h1 class="p-visual__heading">
-                    <span class="g-font p-visual__title">HIYU YAMAUCHI</span>
-                    <span class="g-font p-visual__subtitle">PORTFOLIO</span>
-                </h1>
-                <p class="g-font p-visual__scroll">SCROLL</p>
+               <h1 class="p-visual__heading">
+                  <span class="g-font p-visual__title">HIYU YAMAUCHI</span>
+                  <span class="g-font p-visual__subtitle">PORTFOLIO</span>
+               </h1>
+               <p class="g-font p-visual__scroll">SCROLL</p>
             </div>
-        </section>
-        <section class="l-section p-about">
+         </section>
+         <section class="l-section p-about">
             <div class="l-inner -sm">
-                <h2 class="g-font c-head01">
-                    <p>ABOUT</p>
-                    <span>私について</span>
-                </h2>
-                <div class="p-about__inner">
-                    <p class="p-about__img"><img src="assets/img/img_selfie.jpg" loading="lazy" decoding="async" alt="山内飛勇"></p>
-                    <div class="p-about__content">
-                        <dl class="p-about__item">
-                            <dt class="p-about__title">NAME</dt>
-                            <dd>山内 飛勇 （やまうち ひゆう）</dd>
-                        </dl>
-                        <dl class="p-about__item">
-                            <dt class="p-about__title">INFORMATION</dt>
-                            <dd>2003年生まれ。大阪府八尾市出身。</dd>
-                        </dl>
-                        <dl class="p-about__item">
-                            <dt class="p-about__title">QUALIFICATION</dt>
-                            <dd>Google アナリティクス認定資格（2026年3月取得）</dd>
-                            <dd>ウェブ解析士（2026年9月取得）</dd>
-                        </dl>
-                        <dl class="p-about__item">
-                            <dt class="p-about__title">GITHUB</dt>
-                            <dd><a href="https://github.com/hiyu15123">https://github.com/hiyu15123</a></dd>
-                        </dl>
-                        <dl class="p-about__item">
-                            <dt class="p-about__title">LIKE</dt>
-                            <dd>ランニング、筋トレ、ラジオ聴取、サカナクション</dd>
-                        </dl>
-                    </div>
-                </div>
+               <h2 class="g-font c-head01">
+                  <p>ABOUT</p>
+                  <span>私について</span>
+               </h2>
+               <div class="p-about__inner">
+                  <p class="p-about__img">
+                     <img
+                        src="assets/img/img_selfie.jpg"
+                        loading="lazy"
+                        decoding="async"
+                        alt="山内飛勇"
+                     />
+                  </p>
+                  <div class="p-about__content">
+                     <dl class="p-about__item">
+                        <dt class="p-about__title">NAME</dt>
+                        <dd>山内 飛勇 （やまうち ひゆう）</dd>
+                     </dl>
+                     <dl class="p-about__item">
+                        <dt class="p-about__title">INFORMATION</dt>
+                        <dd>2003年生まれ。大阪府八尾市出身。</dd>
+                     </dl>
+                     <dl class="p-about__item">
+                        <dt class="p-about__title">QUALIFICATION</dt>
+                        <dd>Google アナリティクス認定資格（2026年3月取得）</dd>
+                        <dd>ウェブ解析士（2026年9月取得）</dd>
+                     </dl>
+                     <dl class="p-about__item">
+                        <dt class="p-about__title">GITHUB</dt>
+                        <dd>
+                           <a href="https://github.com/hiyu15123"
+                              >https://github.com/hiyu15123</a
+                           >
+                        </dd>
+                     </dl>
+                     <dl class="p-about__item">
+                        <dt class="p-about__title">LIKE</dt>
+                        <dd>ランニング、筋トレ、ラジオ聴取、サカナクション</dd>
+                     </dl>
+                  </div>
+               </div>
             </div>
-        </section>
-        <section class="l-section p-background">
+         </section>
+         <section class="l-section p-background">
             <div class="l-inner">
-                <h2 class="g-font c-head01">
-                    <p>BACKGROUND</p>
-                    <span>これまで</span>
-                </h2>
-                <ol class="p-background__list">
-                    <li class="p-background__item">
-                        <p class="g-font p-background__year">2024.03</p>
-                        <div class="p-background__content">
-                            <h3 class="c-title p-background__title">清風情報工科学院 デザイン・コンピュータ学科 卒業</h3>
-                        </div>
-                    </li>
-                    <li class="p-background__item">
-                        <p class="g-font p-background__year">2024.04 - 2025.04</p>
-                        <div class="p-background__content">
-                            <h3 class="c-title p-background__title">東京のWEB制作会社 / フロントエンド</h3>
-                            <ul class="p-background__note">
-                                <li>Pugでヘッダーやフッターをモジュール単位のファイルに分割し、複数ページで再利用する構成を構築</li>
-                                <li>WordPressテーマのカスタマイズ（テンプレートタグ、ループ処理、プラグイン対応）</li>
-                                <li>Gitの運用がなかったため、自ら書籍で学び組織アカウントを作成</li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="p-background__item">
-                        <p class="g-font p-background__year">2025.05 - 2025.12</p>
-                        <div class="p-background__content">
-                            <h3 class="c-title p-background__title">アウトドア用品店 / 接客・販売（アルバイト）</h3>
-                            <ul class="p-background__note">
-                                <li>働きながらReact・Vueを学習し、体型診断アプリとTodoリストを制作</li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="p-background__item">
-                        <p class="g-font p-background__year">2026.01 - 2026.09</p>
-                        <div class="p-background__content">
-                            <h3 class="c-title p-background__title">Webマーケティング会社 / Webコーダー</h3>
-                            <p class="p-background__desc">中小企業のコーポレートサイトやメディアサイトのリニューアル・改修を担当（会社都合により退職）</p>
-                            <ul class="p-background__note">
-                                <li>ディレクション、デザイン、コーディング、WordPress実装まで一貫して担当</li>
-                                <li>AIを中心とした制作フローで設計と仕様を自分で組み立て、生成コードとプレビューを確認してから反映</li>
-                                <li>サーバーパネルでのデータベース構築、サイト移管、リダイレクト設定</li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="p-background__item">
-                        <p class="g-font p-background__year">NOW</p>
-                        <div class="p-background__content">
-                            <h3 class="c-title p-background__title">JavaScriptの復習</h3>
-                            <ul class="p-background__note">
-                                <li>前職はAI中心の制作フローだったため、JavaScript Primerで言語仕様を復習</li>
-                                <li>復習を終えたあと、Reactを学び直す予定</li>
-                                <li>ポートフォリオのアクセシビリティと表示パフォーマンスを見直し</li>
-                            </ul>
-                        </div>
-                    </li>
-                </ol>
+               <h2 class="g-font c-head01">
+                  <p>BACKGROUND</p>
+                  <span>これまで</span>
+               </h2>
+               <ol class="p-background__list">
+                  <li class="p-background__item">
+                     <p class="g-font p-background__year">2024.03</p>
+                     <div class="p-background__content">
+                        <h3 class="c-title p-background__title">
+                           清風情報工科学院 デザイン・コンピュータ学科 卒業
+                        </h3>
+                     </div>
+                  </li>
+                  <li class="p-background__item">
+                     <p class="g-font p-background__year">2024.04 - 2025.04</p>
+                     <div class="p-background__content">
+                        <h3 class="c-title p-background__title">
+                           東京のWEB制作会社 / フロントエンド
+                        </h3>
+                        <ul class="p-background__note">
+                           <li>
+                              Pugでヘッダーやフッターをモジュール単位のファイルに分割し、複数ページで再利用する構成を構築
+                           </li>
+                           <li>
+                              WordPressテーマのカスタマイズ（テンプレートタグ、ループ処理、プラグイン対応）
+                           </li>
+                           <li>
+                              Gitの運用がなかったため、自ら書籍で学び組織アカウントを作成
+                           </li>
+                        </ul>
+                     </div>
+                  </li>
+                  <li class="p-background__item">
+                     <p class="g-font p-background__year">2025.05 - 2025.12</p>
+                     <div class="p-background__content">
+                        <h3 class="c-title p-background__title">
+                           アウトドア用品店 / 接客・販売（アルバイト）
+                        </h3>
+                        <ul class="p-background__note">
+                           <li>
+                              働きながらReact・Vueを学習し、体型診断アプリとTodoリストを制作
+                           </li>
+                        </ul>
+                     </div>
+                  </li>
+                  <li class="p-background__item">
+                     <p class="g-font p-background__year">2026.01 - 2026.09</p>
+                     <div class="p-background__content">
+                        <h3 class="c-title p-background__title">
+                           Webマーケティング会社 / Webコーダー
+                        </h3>
+                        <p class="p-background__desc">
+                           中小企業のコーポレートサイトやメディアサイトのリニューアル・改修を担当（会社都合により退職）
+                        </p>
+                        <ul class="p-background__note">
+                           <li>
+                              ディレクション、デザイン、コーディング、WordPress実装まで一貫して担当
+                           </li>
+                           <li>
+                              AIを中心とした制作フローで設計と仕様を自分で組み立て、生成コードとプレビューを確認してから反映
+                           </li>
+                           <li>
+                              サーバーパネルでのデータベース構築、サイト移管、リダイレクト設定
+                           </li>
+                        </ul>
+                     </div>
+                  </li>
+                  <li class="p-background__item">
+                     <p class="g-font p-background__year">NOW</p>
+                     <div class="p-background__content">
+                        <h3 class="c-title p-background__title">
+                           JavaScriptの復習
+                        </h3>
+                        <ul class="p-background__note">
+                           <li>
+                              前職はAI中心の制作フローだったため、JavaScript
+                              Primerで言語仕様を復習
+                           </li>
+                           <li>復習を終えたあと、Typescriptを学び直す予定</li>
+                           <li>
+                              ポートフォリオのアクセシビリティと表示パフォーマンスを見直し
+                           </li>
+                        </ul>
+                     </div>
+                  </li>
+               </ol>
             </div>
-        </section>
-        <section class="l-section p-skill">
+         </section>
+         <section class="l-section p-skill">
             <div class="l-inner">
-                <h2 class="g-font c-head01">
-                    <p>SKILL</p>
-                    <span>できること</span>
-                </h2>
-                <div class="p-skill__list">
-                    <div class="p-skill__item">
-                        <div class="p-skill__img">
-                            <p><img src="assets/img/icon_html5.svg" alt=""></p>
-                            <p><img src="assets/img/icon_sass.svg" alt=""></p>
-                        </div>
-                        <div class="p-skill__content">
-                            <h3 class="c-title p-skill__title">HTML、Scss、Pug</h3>
-                            <h4 class="p-skill__subtitle">習熟度：応用レベル（5/5）</h4>
-                            <p>BEM記法とFLOCSSで設計し、命名規則とディレクトリの方針を先に決めてから実装に入ります。実務ではPugでヘッダーやフッター、繰り返し使うパーツをモジュール単位のファイルに分け、複数ページで使い回す構成を組んでいました。</p>
-                        </div>
-                    </div>
-                    <div class="p-skill__item">
-                        <div class="p-skill__img">
-                            <p><img src="assets/img/icon_javascript.svg" alt=""></p>
-                        </div>
-                        <div class="p-skill__content">
-                            <h3 class="c-title p-skill__title">JavaScript</h3>
-                            <h4 class="p-skill__subtitle">習熟度：中級レベル（3/5）</h4>
-                            <p>フレームワークを使わないVanillaを基本に記述します。fetchとasync/awaitによるAPI連携、Promiseを使った非同期処理、try...catchでのエラー時の表示切り替えができ、ESモジュールで役割ごとにファイルを分けて書きます。DOM操作やイベント処理によるタブ切り替え・ドロップメニューなどのUI実装に加え、aria-liveで表示の変化を読み上げソフトに伝えるなど、読み上げやキーボード操作にも配慮した実装を心がけています。スライダーやアニメーションはSwiper・GSAPで実装できます。</p>
-                        </div>
-                    </div>
-                    <div class="p-skill__item">
-                        <div class="p-skill__img">
-                            <p><img src="assets/img/icon_react.png" alt=""></p>
-                        </div>
-                        <div class="p-skill__content">
-                            <h3 class="c-title p-skill__title">React.js</h3>
-                            <h4 class="p-skill__subtitle">習熟度：基礎レベル（2.5/5）</h4>
-                            <p>UdemyやYoutubeでコンポーネント設計や、useStateなどのフックを学習しました。propsやフックを活用して基礎的なWebアプリを作成できます。</p>
-                        </div>
-                    </div>
-                    <div class="p-skill__item">
-                        <div class="p-skill__img">
-                            <p><img src="assets/img/icon_wordpress.svg" alt=""></p>
-                        </div>
-                        <div class="p-skill__content">
-                            <h3 class="c-title p-skill__title">WordPress</h3>
-                            <h4 class="p-skill__subtitle">習熟度：中級レベル（3.5/5）</h4>
-                            <p>2社でテーマの実装とカスタマイズを担当しました。テンプレートタグやループ処理、プラグインでのカスタマイズに加え、サーバーパネルでのデータベース構築やサイト移管、リダイレクト設定まで対応できます。</p>
-                        </div>
-                    </div>
-                    <div class="p-skill__item">
-                        <div class="p-skill__img">
-                            <p><img src="assets/img/icon_a11y.svg" alt=""></p>
-                        </div>
-                        <div class="p-skill__content">
-                            <h3 class="c-title p-skill__title">アクセシビリティ</h3>
-                            <h4 class="p-skill__subtitle">習熟度：基礎レベル（2/5）</h4>
-                            <p>Webアクセシビリティの考え方と、WCAG 2.0（JIS X 8341-3:2016）に達成基準とレベルが定められていることを勉強しています。このポートフォリオでは、代替テキストの見直し、見出し階層の是正、ページタイトルの設定、キーボード操作時のフォーカス可視化など、レベルA・AAにあたる項目を中心に自分なりに改善しました。達成基準に沿った試験やツールでの検証は未経験のため、実務で身につけたい領域です。</p>
-                        </div>
-                    </div>
-                    <div class="p-skill__item">
-                        <div class="p-skill__img">
-                            <p><img src="assets/img/icon_analytics.svg" alt=""></p>
-                        </div>
-                        <div class="p-skill__content">
-                            <h3 class="c-title p-skill__title">GA4、GTM、Clarity</h3>
-                            <h4 class="p-skill__subtitle">習熟度：基礎レベル（2/5）</h4>
-                            <p>ウェブ解析士とGoogle アナリティクス認定資格を取得しました。実務ではGA4やGoogle タグ マネージャー、Microsoft Clarityの設置を担当し、計測できる状態を整えるところまで対応できます。各ツールのレポートの見方も把握しています。</p>
-                        </div>
-                    </div>
-                    <div class="p-skill__item">
-                        <div class="p-skill__img">
-                            <p><img src="assets/img/icon_figma.svg" alt=""></p>
-                            <p><img src="assets/img/icon_github.svg" alt=""></p>
-                        </div>
-                        <div class="p-skill__content">
-                            <h3 class="c-title p-skill__title">OTHER TOOLS</h3>
-                            <p>デザインカンプの確認にはFigma、画像の書き出しや加工にはPhotoshopとIllustratorを使用します。ソースコードはGitHubで管理し、1社目ではGitの運用がなかったため自ら書籍で学んで組織アカウントを作成しました。2社目ではClaude Codeを中心とした制作フローで、設計や仕様を自分で組み立てたうえで実装を任せる進め方をしていました。</p>
-                        </div>
-                    </div>
-                </div>
+               <h2 class="g-font c-head01">
+                  <p>SKILL</p>
+                  <span>できること</span>
+               </h2>
+               <div class="p-skill__list">
+                  <div class="p-skill__item">
+                     <div class="p-skill__img">
+                        <p><img src="assets/img/icon_html5.svg" alt="" /></p>
+                        <p><img src="assets/img/icon_sass.svg" alt="" /></p>
+                     </div>
+                     <div class="p-skill__content">
+                        <h3 class="c-title p-skill__title">HTML、Scss、Pug</h3>
+                        <h4 class="p-skill__subtitle">
+                           習熟度：応用レベル（5/5）
+                        </h4>
+                        <p>
+                           BEM記法とFLOCSSで設計し、命名規則とディレクトリの方針を先に決めてから実装に入ります。実務ではPugでヘッダーやフッター、繰り返し使うパーツをモジュール単位のファイルに分け、複数ページで使い回す構成を組んでいました。
+                        </p>
+                     </div>
+                  </div>
+                  <div class="p-skill__item">
+                     <div class="p-skill__img">
+                        <p>
+                           <img src="assets/img/icon_javascript.svg" alt="" />
+                        </p>
+                     </div>
+                     <div class="p-skill__content">
+                        <h3 class="c-title p-skill__title">JavaScript</h3>
+                        <h4 class="p-skill__subtitle">
+                           習熟度：中級レベル（3/5）
+                        </h4>
+                        <p>
+                           ESモジュールで役割ごとにファイルを分けて記述します。fetchとasync/awaitでのAPI連携や、DOM操作によるタブ切り替えやスライダーなどのUI実装ができます。
+                        </p>
+                     </div>
+                  </div>
+                  <div class="p-skill__item">
+                     <div class="p-skill__img">
+                        <p><img src="assets/img/icon_react.png" alt="" /></p>
+                     </div>
+                     <div class="p-skill__content">
+                        <h3 class="c-title p-skill__title">React.js</h3>
+                        <h4 class="p-skill__subtitle">
+                           習熟度：基礎レベル（2/5）
+                        </h4>
+                        <p>
+                           UdemyやYoutubeでコンポーネント設計や、useStateなどのフックを学習しました。propsやフックを活用して基礎的なWebアプリを作成できます。
+                        </p>
+                     </div>
+                  </div>
+                  <div class="p-skill__item">
+                     <div class="p-skill__img">
+                        <p>
+                           <img src="assets/img/icon_wordpress.svg" alt="" />
+                        </p>
+                     </div>
+                     <div class="p-skill__content">
+                        <h3 class="c-title p-skill__title">WordPress</h3>
+                        <h4 class="p-skill__subtitle">
+                           習熟度：中級レベル（3.5/5）
+                        </h4>
+                        <p>
+                           2社でテーマの実装とカスタマイズを担当しました。テンプレートタグやループ処理、プラグインでのカスタマイズに加え、サーバーパネルでのデータベース構築やサイト移管、リダイレクト設定まで対応できます。
+                        </p>
+                     </div>
+                  </div>
+                  <div class="p-skill__item">
+                     <div class="p-skill__img">
+                        <p><img src="assets/img/icon_a11y.svg" alt="" /></p>
+                     </div>
+                     <div class="p-skill__content">
+                        <h3 class="c-title p-skill__title">アクセシビリティ</h3>
+                        <h4 class="p-skill__subtitle">
+                           習熟度：基礎レベル（2/5）
+                        </h4>
+                        <p>
+                           代替テキストや見出し階層、キーボード操作時のフォーカス表示など、誰でも使えることを意識して実装しています。WCAG（JIS
+                           X
+                           8341-3）の達成基準に沿った検証の実務経験はないですが、これから身につけたい領域です。
+                        </p>
+                     </div>
+                  </div>
+                  <div class="p-skill__item">
+                     <div class="p-skill__img">
+                        <p>
+                           <img src="assets/img/icon_analytics.svg" alt="" />
+                        </p>
+                     </div>
+                     <div class="p-skill__content">
+                        <h3 class="c-title p-skill__title">
+                           GA4、GTM、Clarity
+                        </h3>
+                        <h4 class="p-skill__subtitle">
+                           習熟度：基礎レベル（2/5）
+                        </h4>
+                        <p>
+                           ウェブ解析士とGoogle
+                           アナリティクス認定資格を取得しました。実務ではGA4やGoogle
+                           タグ マネージャー、Microsoft
+                           Clarityの設置を担当し、計測できる状態を整えるところまで対応できます。各ツールのレポートの見方も把握しています。
+                        </p>
+                     </div>
+                  </div>
+                  <div class="p-skill__item">
+                     <div class="p-skill__img">
+                        <p><img src="assets/img/icon_figma.svg" alt="" /></p>
+                        <p><img src="assets/img/icon_github.svg" alt="" /></p>
+                     </div>
+                     <div class="p-skill__content">
+                        <h3 class="c-title p-skill__title">OTHER TOOLS</h3>
+                        <p>
+                           デザインカンプの確認にはFigma、画像の書き出しや加工にはPhotoshopとIllustratorを使用します。ソースコードはGitHubで管理し、1社目ではGitの運用がなかったため自ら書籍で学んで組織アカウントを作成しました。2社目ではClaude
+                           Codeを中心とした制作フローで、設計や仕様を自分で組み立てたうえで実装を任せる進め方をしていました。
+                        </p>
+                     </div>
+                  </div>
+               </div>
             </div>
-        </section>
-        <section class="l-section p-work">
+         </section>
+         <section class="l-section p-work">
             <div class="l-inner">
-                <h2 class="g-font c-head01">
-                    <p>WEB-WORK</p>
-                    <span>ウェブ作品紹介</span>
-                </h2>
-                <div class="p-work__list">
-                    <div class="p-work__item">
-                        <a href="niko-kan.html">
-                            <p class="p-work__img"><img src="assets/img/img_niko-kan.jpg" loading="lazy" decoding="async" alt="ニコニコ観光株式会社のトップページ"></p>
-                            <div class="p-work__content">
-                                <p class="p-work__title">ニコニコ観光株式会社</p>
-                                <ul class="p-work__skills"><li>WordPress</li><li>Kintone API</li><li>Instagram連携</li><li>Claude Code</li></ul>
-                                <p class="p-work__tag">前職で制作した貸切バス・タクシー会社の実際のお客様サイト（ディレクション・デザイン・実装まで一貫して担当）</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="p-work__item">
-                        <a href="weather-app.html">
-                            <p class="p-work__img"><img src="assets/img/img_weather-app.jpg" loading="lazy" decoding="async" alt="天気予報アプリの画面"></p>
-                            <div class="p-work__content">
-                                <p class="p-work__title">天気予報アプリ</p>
-                                <ul class="p-work__skills"><li>Vanilla JS</li><li>SCSS</li><li>Open-Meteo API</li></ul>
-                                <p class="p-work__tag">フレームワークを使わずJavaScriptで制作した、API連携とアクセシビリティに配慮した天気予報アプリ</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="p-work__item">
-                        <a href="demo-site.html">
-                            <p class="p-work__img"><img src="assets/img/img_demo-site.jpg" loading="lazy" decoding="async" alt="デモコーポレートサイトのトップページ"></p>
-                            <div class="p-work__content">
-                                <p class="p-work__title">デモコーポレートサイト</p>
-                                <ul class="p-work__skills"><li>Vanilla JS</li><li>Gulp</li><li>Swiper</li></ul>
-                                <p class="p-work__tag">練習として作成した静的コーポレートサイト（Top）</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="p-work__item">
-                        <a href="first-camp.html">
-                            <p class="p-work__img"><img src="assets/img/firstCamp.jpg" loading="lazy" decoding="async" alt="レッスンサイト First Camp のトップページ"></p>
-                            <div class="p-work__content">
-                                <p class="p-work__title">First Camp</p>
-                                <ul class="p-work__skills"><li>SCSS</li><li>GSAP</li><li>Swiper</li></ul>
-                                <p class="p-work__tag">専門学校制作 : ソロキャンプ向けのレッスンサイト</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="p-work__item">
-                        <a href="body-type-app.html">
-                            <p class="p-work__img"><img src="assets/img/img_body-type-app.jpg" loading="lazy" decoding="async" alt="体型診断アプリの画面"></p>
-                            <div class="p-work__content">
-                                <p class="p-work__title">体型診断アプリ</p>
-                                <ul class="p-work__skills"><li>React</li><li>Vite</li></ul>
-                                <p class="p-work__tag">Reactを使用したBMIや体型を診断できるアプリ</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="p-work__item">
-                        <a href="todos.html">
-                            <p class="p-work__img"><img src="assets/img/img_todos.jpg" loading="lazy" decoding="async" alt="Todoリストアプリの画面"></p>
-                            <div class="p-work__content">
-                                <p class="p-work__title">Todos</p>
-                                <ul class="p-work__skills"><li>Vue.js</li><li>Vite</li></ul>
-                                <p class="p-work__tag">Vueを使用して作成したTodoリスト</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="p-work__item">
-                        <a href="fitness-ai-memo.html">
-                            <p class="p-work__img"><img src="assets/img/img_fitness-ai-memo.jpg" loading="lazy" decoding="async" alt="筋トレ・食事AIメモのApp Storeスクリーンショット"></p>
-                            <div class="p-work__content">
-                                <p class="p-work__title">筋トレ・食事AIメモ</p>
-                                <ul class="p-work__skills"><li>iOS</li><li>Claude Code</li><li>AI</li></ul>
-                                <p class="p-work__tag">Claude Codeで開発しApp Storeで公開した、食事と筋トレの記録iOSアプリ</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
+               <h2 class="g-font c-head01">
+                  <p>WEB-WORK</p>
+                  <span>ウェブ作品紹介</span>
+               </h2>
+               <div class="p-work__list">
+                  <div class="p-work__item">
+                     <a href="niko-kan.html">
+                        <p class="p-work__img">
+                           <img
+                              src="assets/img/img_niko-kan.jpg"
+                              loading="lazy"
+                              decoding="async"
+                              alt="ニコニコ観光株式会社のトップページ"
+                           />
+                        </p>
+                        <div class="p-work__content">
+                           <p class="p-work__title">ニコニコ観光株式会社</p>
+                           <ul class="p-work__skills">
+                              <li>WordPress</li>
+                              <li>Kintone API</li>
+                              <li>Instagram連携</li>
+                              <li>Claude Code</li>
+                           </ul>
+                           <p class="p-work__tag">
+                              前職で制作した貸切バス・タクシー会社の実際のお客様サイト（ディレクション・デザイン・実装まで一貫して担当）
+                           </p>
+                        </div>
+                     </a>
+                  </div>
+                  <div class="p-work__item">
+                     <a href="weather-app.html">
+                        <p class="p-work__img">
+                           <img
+                              src="assets/img/img_weather-app.jpg"
+                              loading="lazy"
+                              decoding="async"
+                              alt="天気予報アプリの画面"
+                           />
+                        </p>
+                        <div class="p-work__content">
+                           <p class="p-work__title">天気予報アプリ</p>
+                           <ul class="p-work__skills">
+                              <li>Vanilla JS</li>
+                              <li>SCSS</li>
+                              <li>Open-Meteo API</li>
+                              <li>Claude Code</li>
+                           </ul>
+                           <p class="p-work__tag">
+                              フレームワークを使わずJavaScriptで制作した、API連携とアクセシビリティに配慮した天気予報アプリ
+                           </p>
+                        </div>
+                     </a>
+                  </div>
+                  <div class="p-work__item">
+                     <a href="demo-site.html">
+                        <p class="p-work__img">
+                           <img
+                              src="assets/img/img_demo-site.jpg"
+                              loading="lazy"
+                              decoding="async"
+                              alt="デモコーポレートサイトのトップページ"
+                           />
+                        </p>
+                        <div class="p-work__content">
+                           <p class="p-work__title">デモコーポレートサイト</p>
+                           <ul class="p-work__skills">
+                              <li>Vanilla JS</li>
+                              <li>Gulp</li>
+                              <li>Swiper</li>
+                           </ul>
+                           <p class="p-work__tag">
+                              練習として作成した静的コーポレートサイト（Top）
+                           </p>
+                        </div>
+                     </a>
+                  </div>
+                  <div class="p-work__item">
+                     <a href="body-type-app.html">
+                        <p class="p-work__img">
+                           <img
+                              src="assets/img/img_body-type-app.jpg"
+                              loading="lazy"
+                              decoding="async"
+                              alt="体型診断アプリの画面"
+                           />
+                        </p>
+                        <div class="p-work__content">
+                           <p class="p-work__title">体型診断アプリ</p>
+                           <ul class="p-work__skills">
+                              <li>React</li>
+                              <li>Vite</li>
+                              <li>Claude Code</li>
+                           </ul>
+                           <p class="p-work__tag">
+                              Reactを使用したBMIや体型を診断できるアプリ
+                           </p>
+                        </div>
+                     </a>
+                  </div>
+                  <div class="p-work__item">
+                     <a href="todos.html">
+                        <p class="p-work__img">
+                           <img
+                              src="assets/img/img_todos.jpg"
+                              loading="lazy"
+                              decoding="async"
+                              alt="Todoリストアプリの画面"
+                           />
+                        </p>
+                        <div class="p-work__content">
+                           <p class="p-work__title">Todos</p>
+                           <ul class="p-work__skills">
+                              <li>Vue.js</li>
+                              <li>Vite</li>
+                              <li>Claude Code</li>
+                           </ul>
+                           <p class="p-work__tag">
+                              Vueを使用して作成したTodoリスト
+                           </p>
+                        </div>
+                     </a>
+                  </div>
+                  <div class="p-work__item">
+                     <a href="first-camp.html">
+                        <p class="p-work__img">
+                           <img
+                              src="assets/img/firstCamp.jpg"
+                              loading="lazy"
+                              decoding="async"
+                              alt="レッスンサイト First Camp のトップページ"
+                           />
+                        </p>
+                        <div class="p-work__content">
+                           <p class="p-work__title">First Camp</p>
+                           <ul class="p-work__skills">
+                              <li>SCSS</li>
+                              <li>GSAP</li>
+                              <li>Swiper</li>
+                           </ul>
+                           <p class="p-work__tag">
+                              専門学校制作 : ソロキャンプ向けのレッスンサイト
+                           </p>
+                        </div>
+                     </a>
+                  </div>
+                  <div class="p-work__item">
+                     <a href="fitness-ai-memo.html">
+                        <p class="p-work__img">
+                           <img
+                              src="assets/img/img_fitness-ai-memo.jpg"
+                              loading="lazy"
+                              decoding="async"
+                              alt="筋トレ・食事AIメモのApp Storeスクリーンショット"
+                           />
+                        </p>
+                        <div class="p-work__content">
+                           <p class="p-work__title">筋トレ・食事AIメモ</p>
+                           <ul class="p-work__skills">
+                              <li>iOS</li>
+                              <li>Claude Code</li>
+                              <li>AI</li>
+                           </ul>
+                           <p class="p-work__tag">
+                              Claude Codeで開発しApp
+                              Storeで公開した、食事と筋トレの記録iOSアプリ
+                           </p>
+                        </div>
+                     </a>
+                  </div>
+               </div>
             </div>
-        </section>
-        <section class="l-section p-work">
+         </section>
+         <section class="l-section p-work">
             <div class="l-inner">
-                <h2 class="g-font c-head01">
-                    <p>GRAPHIC-WORK</p>
-                    <span>グラフィック作品紹介</span>
-                </h2>
-                <div class="p-work__list">
-                    <div class="p-work__item">
-                        <a href="banner.html">
-                            <p class="p-work__img"><img src="assets/img/banner.png" loading="lazy" decoding="async" alt="ケンタッキー・フライドチキンのクリスマスバナー"></p>
-                            <div class="p-work__content">
-                                <p class="p-work__title">クリスマスバナー</p>
-                                <p class="p-work__tag">専門学校制作 : ケンタッキー・フライドチキンのクリスマスをデザイン</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="p-work__item">
-                        <a href="tabroid.html">
-                            <p class="p-work__img"><img src="assets/img/tabroid.jpg" loading="lazy" decoding="async" alt="沖縄の絶景スポットを紹介するタブロイド紙"></p>
-                            <div class="p-work__content">
-                                <p class="p-work__title">沖縄絶景タブロイド</p>
-                                <p class="p-work__tag">専門学校制作 : 沖縄の絶景スポットをタブロイド紙にデザイン</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="p-work__item">
-                        <a href="poster-ukraine.html">
-                            <p class="p-work__img"><img src="assets/img/ukrainePoster.png" loading="lazy" decoding="async" alt="ウクライナ募金活動のポスター"></p>
-                            <div class="p-work__content">
-                                <p class="p-work__title">ウクライナ募金ポスター</p>
-                                <p class="p-work__tag">専門学校制作 : ウクライナの募金活動をデザイン</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="p-work__item">
-                        <a href="poster-oronaminc.html">
-                            <p class="p-work__img"><img src="assets/img/oronamincPoster.jpg" loading="lazy" decoding="async" alt="オロナミンCのポスター"></p>
-                            <div class="p-work__content">
-                                <p class="p-work__title">オロナミンCポスター</p>
-                                <p class="p-work__tag">専門学校制作：オロナミンCをデザイン</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
+               <h2 class="g-font c-head01">
+                  <p>GRAPHIC-WORK</p>
+                  <span>グラフィック作品紹介</span>
+               </h2>
+               <div class="p-work__list">
+                  <div class="p-work__item">
+                     <a href="banner.html">
+                        <p class="p-work__img">
+                           <img
+                              src="assets/img/banner.png"
+                              loading="lazy"
+                              decoding="async"
+                              alt="ケンタッキー・フライドチキンのクリスマスバナー"
+                           />
+                        </p>
+                        <div class="p-work__content">
+                           <p class="p-work__title">クリスマスバナー</p>
+                           <p class="p-work__tag">
+                              専門学校制作 :
+                              ケンタッキー・フライドチキンのクリスマスをデザイン
+                           </p>
+                        </div>
+                     </a>
+                  </div>
+                  <div class="p-work__item">
+                     <a href="tabroid.html">
+                        <p class="p-work__img">
+                           <img
+                              src="assets/img/tabroid.jpg"
+                              loading="lazy"
+                              decoding="async"
+                              alt="沖縄の絶景スポットを紹介するタブロイド紙"
+                           />
+                        </p>
+                        <div class="p-work__content">
+                           <p class="p-work__title">沖縄絶景タブロイド</p>
+                           <p class="p-work__tag">
+                              専門学校制作 :
+                              沖縄の絶景スポットをタブロイド紙にデザイン
+                           </p>
+                        </div>
+                     </a>
+                  </div>
+                  <div class="p-work__item">
+                     <a href="poster-ukraine.html">
+                        <p class="p-work__img">
+                           <img
+                              src="assets/img/ukrainePoster.png"
+                              loading="lazy"
+                              decoding="async"
+                              alt="ウクライナ募金活動のポスター"
+                           />
+                        </p>
+                        <div class="p-work__content">
+                           <p class="p-work__title">ウクライナ募金ポスター</p>
+                           <p class="p-work__tag">
+                              専門学校制作 : ウクライナの募金活動をデザイン
+                           </p>
+                        </div>
+                     </a>
+                  </div>
+                  <div class="p-work__item">
+                     <a href="poster-oronaminc.html">
+                        <p class="p-work__img">
+                           <img
+                              src="assets/img/oronamincPoster.jpg"
+                              loading="lazy"
+                              decoding="async"
+                              alt="オロナミンCのポスター"
+                           />
+                        </p>
+                        <div class="p-work__content">
+                           <p class="p-work__title">オロナミンCポスター</p>
+                           <p class="p-work__tag">
+                              専門学校制作：オロナミンCをデザイン
+                           </p>
+                        </div>
+                     </a>
+                  </div>
+               </div>
             </div>
-        </section>
-        <section class="l-section p-contact">
+         </section>
+         <section class="l-section p-contact">
             <div class="l-inner">
-                <h2 class="g-font c-head01">
-                    <p>CONTACT</p>
-                    <span>お問い合わせ</span>
-                </h2>
-                <p class="p-contact__btn">
-                    <a href="mailto:hiyu.yamauchi@gmail.com">hiyu.yamauchi@gmail.com</a>
-                </p>
+               <h2 class="g-font c-head01">
+                  <p>CONTACT</p>
+                  <span>お問い合わせ</span>
+               </h2>
+               <p class="p-contact__btn">
+                  <a href="mailto:hiyu.yamauchi@gmail.com"
+                     >hiyu.yamauchi@gmail.com</a
+                  >
+               </p>
             </div>
-        </section>
-    </main>
-    <!-- Load footer from an include file -->
-    <footer class="l-footer" id="l-footer"></footer>
-    <script>
-        fetch('include/footer.html')
-            .then(response => response.text())
-            .then(html => {
-            document.getElementById('l-footer').innerHTML = html;
-        });
-    </script>
-</body>
+         </section>
+      </main>
+      <!-- Load footer from an include file -->
+      <footer class="l-footer" id="l-footer"></footer>
+      <script>
+         fetch("include/footer.html")
+            .then((response) => response.text())
+            .then((html) => {
+               document.getElementById("l-footer").innerHTML = html;
+            });
+      </script>
+   </body>
 </html>

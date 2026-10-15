@@ -999,6 +999,9 @@ main {
 .p-work__card + * {
   margin-top: 2rem;
 }
+.p-work__card p + p {
+  margin-top: 1.2rem;
+}
 .p-work__card a {
   border-bottom: 1px solid #333;
 }
@@ -1038,6 +1041,7 @@ main {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  border: 1px solid #333;
 }
 .p-work__photo img + * {
   margin-top: 0.6rem;
@@ -1048,8 +1052,28 @@ main {
   display: block;
   color: #888;
 }
+.p-work__photos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  max-width: 60rem;
+  margin-inline: auto;
+}
+@media (max-width: 767px) {
+  .p-work__photos {
+    gap: 1.2rem;
+  }
+}
+.p-work__photos img {
+  width: 100%;
+  height: auto;
+  border: 1px solid #333;
+}
+.p-work__photos img + * {
+  margin-top: 0.8rem;
+}
 
-* + .p-work__photos {
+* + .p-work__photos, * + .p-work__photo {
   margin-top: 1.6rem;
 }
 
