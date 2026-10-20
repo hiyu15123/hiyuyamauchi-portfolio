@@ -60,14 +60,8 @@
                   <div class="p-work__card">
                      <h2 class="p-work__title">JavaScriptの工夫</h2>
                      <p>
-                        実装はすべてClaude Codeを活用して制作しました。生成されたコードは一つひとつ仕組みを確認し、理解したうえで反映しています。天気の取得はfetchとasync/awaitで書き、レスポンスのokを確認して失敗時はエラーを投げ、「読み込み中」「取得失敗」の表示に切り替えています。ブラウザの位置情報取得はコールバック形式のため、new
+                        JavaScriptの基礎を確かめながら制作しました。途中わからない箇所はAIに質問し、仕組みを理解したうえで自分で実装しました。天気の取得はfetchとasync/awaitで書き、レスポンスのokを確認して失敗時はエラーを投げ、「読み込み中」「取得失敗」の表示に切り替えています。ブラウザの位置情報取得はコールバック形式のため、new
                         Promiseで包んでawaitで扱えるようにし、許可されなかった場合は都市の選択を促すメッセージを出しています。ファイルは役割ごとにESモジュールで分け、どこで問題が起きたか追いやすく、変更が1か所で済む構成にしました。
-                     </p>
-                  </div>
-                  <div class="p-work__card">
-                     <h2 class="p-work__title">アクセシビリティ</h2>
-                     <p>
-                        表の見出しにはscopeを付けて見出しとデータを結びつけ、画面上は見えないcaptionで表の内容を伝えています。天気の絵文字は読み上げが冗長にならないようaria-hiddenにし、天気名はテキストで表示しています。表示の切り替わりはaria-liveで読み上げソフトにも伝わるようにし、横スクロールする表はキーボードだけで操作でき、Lighthouseのアクセシビリティスコアは100です。
                      </p>
                   </div>
                   <div class="p-work__card">
@@ -78,7 +72,7 @@
                      <h2 class="p-work__title">使用技術</h2>
                      <p>
                         HTML、SCSS、JavaScript（フレームワークなし）、Open-Meteo
-                        API、Claude Code
+                        API
                      </p>
                   </div>
                   <div class="p-work__card">

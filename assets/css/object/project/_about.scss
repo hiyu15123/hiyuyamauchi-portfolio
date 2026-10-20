@@ -2,6 +2,22 @@
 @use "../../global/mixin" as *;
 
 .p-about {
+    &__lead {
+        font-size: 2rem;
+        font-weight: bold;
+        line-height: 1.6;
+        text-align: center;
+        @include sp {
+            font-size: 1.6rem;
+            text-align: left;
+        }
+        & + * {
+            margin-top: 3.2rem;
+            @include sp {
+                margin-top: 2.4rem;
+            }
+        }
+    }
     &__inner {
         display: flex;
         align-items: stretch;

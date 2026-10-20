@@ -636,6 +636,26 @@ main {
   text-align: center;
 }
 
+.p-about__lead {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.6;
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .p-about__lead {
+    font-size: 1.6rem;
+    text-align: left;
+  }
+}
+.p-about__lead + * {
+  margin-top: 3.2rem;
+}
+@media (max-width: 767px) {
+  .p-about__lead + * {
+    margin-top: 2.4rem;
+  }
+}
 .p-about__inner {
   display: flex;
   align-items: stretch;
